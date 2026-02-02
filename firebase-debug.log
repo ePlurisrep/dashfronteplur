@@ -1,0 +1,141 @@
+[debug] [2026-02-02T18:10:37.756Z] ----------------------------------------------------------------------
+[debug] [2026-02-02T18:10:37.759Z] Command:       /home/user/.global_modules/bin/firebase /home/user/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2026-02-02T18:10:37.759Z] CLI Version:   15.5.1
+[debug] [2026-02-02T18:10:37.760Z] Platform:      linux
+[debug] [2026-02-02T18:10:37.760Z] Node Version:  v20.18.2
+[debug] [2026-02-02T18:10:37.760Z] Time:          Mon Feb 02 2026 18:10:37 GMT+0000 (Coordinated Universal Time)
+[debug] [2026-02-02T18:10:37.760Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-02-02T18:10:39.747Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:10:39.748Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:10:39.752Z] >>> [apiv2][query] GET https://monospace-pa.googleapis.com/v1/workspaces/dashfronteplur-39980851 [none]
+[debug] [2026-02-02T18:10:40.338Z] <<< [apiv2][status] GET https://monospace-pa.googleapis.com/v1/workspaces/dashfronteplur-39980851 200
+[debug] [2026-02-02T18:10:40.338Z] <<< [apiv2][body] GET https://monospace-pa.googleapis.com/v1/workspaces/dashfronteplur-39980851 {"workspaceId":"dashfronteplur-39980851","name":"dashfronteplur","workspaceRedirectUrl":"firebase-dashfronteplur-1770048978883.cluster-joak5ukfbnbyqspg4tewa33d24.cloudworkstations.dev","status":"WORKSPACE_STATUS_RUNNING","lastAccessDatetime":"2026-02-02T16:16:40.259956Z","workspaceTemplate":"WORKSPACE_TEMPLATE_BLANK_WEB","owner":"SELF","serviceAccountEmail":"msp-5882758187526502081@monospace-1.iam.gserviceaccount.com","enableNix":true,"ownerEmail":"eplurisinc@gmail.com","workspaceImageUrl":"https://www.gstatic.com/monospace/231115/logo_nextjs.svg","templateArgs":"{\"language\":\"ts\",\"srcDir\":true,\"eslint\":true,\"app\":true,\"tailwind\":true,\"__agentic_workspace\":true}","templateRepoUrl":"file:///usr/local/monospace/templates/public/nextjs","workstationAccessToken":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2Nsb3VkLmdvb2dsZS5jb20vd29ya3N0YXRpb25zIiwiYXVkIjoiZmlyZWJhc2UtZGFzaGZyb250ZXBsdXItMTc3MDA0ODk3ODg4My5jbHVzdGVyLWpvYWs1dWtmYm5ieXFzcGc0dGV3YTMzZDI0LmNsb3Vkd29ya3N0YXRpb25zLmRldiIsImlhdCI6MTc3MDA1NTg0MCwiZXhwIjoxNzcwMTQyMjQwfQ.Rlfx__XRLySL9vrltR0lPmdMxWpoK2oLQXmptRJMlRykp6YrCIZbcwuNppFSpmizutMvN8BNDCdhnrMYJj--q7h0ZiDgqXwmQagPhP9LaWT6c6_8gGBPesUEUqDF-5K_0ZCCjHT7JMvtjVjhP4B-2jsCPemTYMpNPfithotpiLh33wam0icp2wsv7pWtRhs8Yv6cj3cLMKsBC4cW5dsCeK5TrpGj6v1ESA8JPhWjXUXmeDBkuwFqz4YfBAD58ZE_YlLeZJ7_djGplfYL7GI_dGjqEMPBwr5UzeaMQbtR4XVznwRZqjsO7Dy4GA4oUUB85TZEQJvrvxc30Q3la3xJdA"}
+[info] Updating Studio Workspace active project to match Firebase CLI 'thedasheplur'
+[debug] [2026-02-02T18:10:40.341Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:10:40.341Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:10:40.343Z] >>> [apiv2][query] PATCH https://monospace-pa.googleapis.com/v1/workspaces/dashfronteplur-39980851 updateMask=workspace.firebaseProjectId
+[debug] [2026-02-02T18:10:40.344Z] >>> [apiv2][body] PATCH https://monospace-pa.googleapis.com/v1/workspaces/dashfronteplur-39980851 {"firebaseProjectId":"thedasheplur"}
+[debug] [2026-02-02T18:10:40.934Z] <<< [apiv2][status] PATCH https://monospace-pa.googleapis.com/v1/workspaces/dashfronteplur-39980851 200
+[debug] [2026-02-02T18:10:40.935Z] <<< [apiv2][body] PATCH https://monospace-pa.googleapis.com/v1/workspaces/dashfronteplur-39980851 {"workspaceId":"dashfronteplur-39980851","name":"dashfronteplur","workspaceRedirectUrl":"firebase-dashfronteplur-1770048978883.cluster-joak5ukfbnbyqspg4tewa33d24.cloudworkstations.dev","status":"WORKSPACE_STATUS_RUNNING","lastAccessDatetime":"2026-02-02T16:16:40.259956Z","workspaceTemplate":"WORKSPACE_TEMPLATE_BLANK_WEB","serviceAccountEmail":"msp-5882758187526502081@monospace-1.iam.gserviceaccount.com","enableNix":true,"workspaceImageUrl":"https://www.gstatic.com/monospace/231115/logo_nextjs.svg","templateArgs":"{\"language\":\"ts\",\"srcDir\":true,\"eslint\":true,\"app\":true,\"tailwind\":true,\"__agentic_workspace\":true}","templateRepoUrl":"file:///usr/local/monospace/templates/public/nextjs","firebaseProjectId":"thedasheplur"}
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/user/dashfronteplur
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-02-02T18:10:50.185Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T18:10:50.186Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[debug] [2026-02-02T18:10:50.186Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:10:50.186Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:10:50.188Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/thedasheplur [none]
+[debug] [2026-02-02T18:10:50.377Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/thedasheplur 200
+[debug] [2026-02-02T18:10:50.379Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/thedasheplur {"projectId":"thedasheplur","projectNumber":"911516185136","displayName":"thedasheplur","name":"projects/thedasheplur","resources":{"hostingSite":"thedasheplur"},"state":"ACTIVE","etag":"1_9ae4cd15-4e33-4a31-b8ba-c2407839cffd"}
+[info] i  Using project thedasheplur (thedasheplur) . 
+[info] 
+=== App Hosting Setup
+[debug] [2026-02-02T18:10:50.399Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:10:50.399Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:10:50.400Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo [none]
+[debug] [2026-02-02T18:10:50.508Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo 200
+[debug] [2026-02-02T18:10:50.508Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo {"name":"projects/thedasheplur/billingInfo","projectId":"thedasheplur","billingAccountName":"billingAccounts/012352-8B5810-5A78B1","billingEnabled":true}
+[debug] [2026-02-02T18:10:50.510Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:10:50.510Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:10:50.511Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-02-02T18:10:50.511Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseapphosting.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:10:50.912Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-02-02T18:10:50.913Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-02-02T18:10:50.914Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:10:50.914Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:10:50.914Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseapphosting.googleapis.com:enable [none]
+[debug] [2026-02-02T18:10:50.914Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseapphosting.googleapis.com:enable  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:10:51.561Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseapphosting.googleapis.com:enable 200
+[debug] [2026-02-02T18:10:51.561Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseapphosting.googleapis.com:enable [omitted]
+[debug] [2026-02-02T18:11:01.580Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:11:01.580Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:11:01.581Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:11:01.581Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:11:01.581Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:11:01.581Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:11:01.582Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:11:01.582Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:11:01.582Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:11:01.582Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:11:01.583Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:11:01.583Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:11:01.584Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/developerconnect.googleapis.com [none]
+[debug] [2026-02-02T18:11:01.584Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/developerconnect.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:11:01.587Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudbuild.googleapis.com [none]
+[debug] [2026-02-02T18:11:01.587Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudbuild.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:11:01.590Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/secretmanager.googleapis.com [none]
+[debug] [2026-02-02T18:11:01.591Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/secretmanager.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:11:01.594Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/run.googleapis.com [none]
+[debug] [2026-02-02T18:11:01.594Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/run.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:11:01.597Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/artifactregistry.googleapis.com [none]
+[debug] [2026-02-02T18:11:01.597Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/artifactregistry.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:11:01.603Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/iam.googleapis.com [none]
+[debug] [2026-02-02T18:11:01.603Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/iam.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:11:01.912Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/secretmanager.googleapis.com 200
+[debug] [2026-02-02T18:11:01.912Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/secretmanager.googleapis.com [omitted]
+[debug] [2026-02-02T18:11:01.945Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudbuild.googleapis.com 200
+[debug] [2026-02-02T18:11:01.947Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudbuild.googleapis.com [omitted]
+[debug] [2026-02-02T18:11:01.967Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/developerconnect.googleapis.com 200
+[debug] [2026-02-02T18:11:01.967Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/developerconnect.googleapis.com [omitted]
+[debug] [2026-02-02T18:11:01.967Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:11:01.968Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:11:01.968Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/developerconnect.googleapis.com:enable [none]
+[debug] [2026-02-02T18:11:01.968Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/developerconnect.googleapis.com:enable  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:11:01.971Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/iam.googleapis.com 200
+[debug] [2026-02-02T18:11:01.974Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/iam.googleapis.com [omitted]
+[debug] [2026-02-02T18:11:02.001Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/artifactregistry.googleapis.com 200
+[debug] [2026-02-02T18:11:02.004Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/artifactregistry.googleapis.com [omitted]
+[debug] [2026-02-02T18:11:02.015Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/run.googleapis.com 200
+[debug] [2026-02-02T18:11:02.015Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/run.googleapis.com [omitted]
+[debug] [2026-02-02T18:11:02.617Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/developerconnect.googleapis.com:enable 200
+[debug] [2026-02-02T18:11:02.618Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/developerconnect.googleapis.com:enable [omitted]
+[debug] [2026-02-02T18:11:12.632Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:11:12.632Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:11:12.632Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/thedasheplur/serviceAccounts/firebase-app-hosting-compute@thedasheplur.iam.gserviceaccount.com:testIamPermissions [none]
+[debug] [2026-02-02T18:11:12.632Z] >>> [apiv2][(partial)header] POST https://iam.googleapis.com/v1/projects/thedasheplur/serviceAccounts/firebase-app-hosting-compute@thedasheplur.iam.gserviceaccount.com:testIamPermissions  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:11:12.632Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/thedasheplur/serviceAccounts/firebase-app-hosting-compute@thedasheplur.iam.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2026-02-02T18:11:12.827Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/thedasheplur/serviceAccounts/firebase-app-hosting-compute@thedasheplur.iam.gserviceaccount.com:testIamPermissions 404
+[debug] [2026-02-02T18:11:12.829Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/thedasheplur/serviceAccounts/firebase-app-hosting-compute@thedasheplur.iam.gserviceaccount.com:testIamPermissions {"error":{"code":404,"message":"Unknown service account","status":"NOT_FOUND"}}
+[debug] [2026-02-02T18:11:12.832Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:11:12.832Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:11:12.835Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/thedasheplur/serviceAccounts [none]
+[debug] [2026-02-02T18:11:12.836Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/thedasheplur/serviceAccounts {"accountId":"firebase-app-hosting-compute","serviceAccount":{"displayName":"Firebase App Hosting compute service account","description":"Default service account used to run builds and deploys for Firebase App Hosting"}}
+[debug] [2026-02-02T18:11:13.217Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/thedasheplur/serviceAccounts 200
+[debug] [2026-02-02T18:11:13.217Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/thedasheplur/serviceAccounts [omitted]
+[debug] [2026-02-02T18:11:13.218Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:11:13.218Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:11:13.220Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/thedasheplur:getIamPolicy [none]
+[debug] [2026-02-02T18:11:13.336Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/thedasheplur:getIamPolicy 200
+[debug] [2026-02-02T18:11:13.336Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/thedasheplur:getIamPolicy {"version":1,"etag":"BwZJ2z6/zPw=","bindings":[{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:911516185136@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-911516185136@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-911516185136@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:911516185136-compute@developer.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-911516185136@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@thedasheplur.iam.gserviceaccount.com"]},{"role":"roles/firebasedataconnect.serviceAgent","members":["serviceAccount:service-911516185136@gcp-sa-firebasedataconnect.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@thedasheplur.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:eplurisinc@gmail.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-911516185136@serverless-robot-prod.iam.gserviceaccount.com"]}]}
+[debug] [2026-02-02T18:11:13.339Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:11:13.339Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:11:13.340Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/thedasheplur:setIamPolicy [none]
+[debug] [2026-02-02T18:11:13.340Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/thedasheplur:setIamPolicy {"policy":{"version":1,"etag":"BwZJ2z6/zPw=","bindings":[{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:911516185136@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-911516185136@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-911516185136@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:911516185136-compute@developer.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-911516185136@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@thedasheplur.iam.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@thedasheplur.iam.gserviceaccount.com"]},{"role":"roles/firebasedataconnect.serviceAgent","members":["serviceAccount:service-911516185136@gcp-sa-firebasedataconnect.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@thedasheplur.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:eplurisinc@gmail.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-911516185136@serverless-robot-prod.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.computeRunner","members":["serviceAccount:firebase-app-hosting-compute@thedasheplur.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.readTokenAccessor","members":["serviceAccount:firebase-app-hosting-compute@thedasheplur.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:firebase-app-hosting-compute@thedasheplur.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2026-02-02T18:11:13.796Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/thedasheplur:setIamPolicy 400
+[debug] [2026-02-02T18:11:13.797Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/thedasheplur:setIamPolicy {"error":{"code":400,"message":"Service account firebase-app-hosting-compute@thedasheplur.iam.gserviceaccount.com does not exist.","status":"INVALID_ARGUMENT"}}
+[warn] ⚠  Your App Hosting compute service account is still being provisioned in the background. If you encounter an error, please try again after a few moments. 
+[info] i  This command links your local project to Firebase App Hosting. You will be able to deploy your web app with `firebase deploy` after setup. 
+[debug] [2026-02-02T18:11:21.484Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:11:21.484Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:11:21.485Z] >>> [apiv2][query] GET https://firebaseapphosting.googleapis.com/v1beta/projects/thedasheplur/locations/-/backends 
+[debug] [2026-02-02T18:11:21.862Z] <<< [apiv2][status] GET https://firebaseapphosting.googleapis.com/v1beta/projects/thedasheplur/locations/-/backends 200
+[debug] [2026-02-02T18:11:21.862Z] <<< [apiv2][body] GET https://firebaseapphosting.googleapis.com/v1beta/projects/thedasheplur/locations/-/backends {}

@@ -1,0 +1,674 @@
+extend type Mutation {
+  """
+  ✨ Insert a single `Comment` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  comment_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: Comment_Data!
+  ): Comment_KeyOutput! @fdc_generated(from: "Comment", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `Dataset` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  dataset_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: Dataset_Data!
+  ): Dataset_KeyOutput! @fdc_generated(from: "Dataset", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `File` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  file_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: File_Data!
+  ): File_KeyOutput! @fdc_generated(from: "File", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `Institution` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  institution_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: Institution_Data!
+  ): Institution_KeyOutput! @fdc_generated(from: "Institution", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `SubscriptionType` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  subscriptionType_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: SubscriptionType_Data!
+  ): SubscriptionType_KeyOutput! @fdc_generated(from: "SubscriptionType", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `User` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  user_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: User_Data!
+  ): User_KeyOutput! @fdc_generated(from: "User", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert `Comment` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  comment_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [Comment_Data!]!
+  ): [Comment_KeyOutput!]! @fdc_generated(from: "Comment", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `Dataset` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  dataset_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [Dataset_Data!]!
+  ): [Dataset_KeyOutput!]! @fdc_generated(from: "Dataset", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `File` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  file_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [File_Data!]!
+  ): [File_KeyOutput!]! @fdc_generated(from: "File", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `Institution` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  institution_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [Institution_Data!]!
+  ): [Institution_KeyOutput!]! @fdc_generated(from: "Institution", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `SubscriptionType` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  subscriptionType_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [SubscriptionType_Data!]!
+  ): [SubscriptionType_KeyOutput!]! @fdc_generated(from: "SubscriptionType", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `User` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  user_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [User_Data!]!
+  ): [User_KeyOutput!]! @fdc_generated(from: "User", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert or update a single `Comment` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `Comment`.
+  """
+  comment_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: Comment_Data!
+  ): Comment_KeyOutput! @fdc_generated(from: "Comment", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `Dataset` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `Dataset`.
+  """
+  dataset_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: Dataset_Data!
+  ): Dataset_KeyOutput! @fdc_generated(from: "Dataset", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `File` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `File`.
+  """
+  file_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: File_Data!
+  ): File_KeyOutput! @fdc_generated(from: "File", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `Institution` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `Institution`.
+  """
+  institution_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: Institution_Data!
+  ): Institution_KeyOutput! @fdc_generated(from: "Institution", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `SubscriptionType` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `SubscriptionType`.
+  """
+  subscriptionType_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: SubscriptionType_Data!
+  ): SubscriptionType_KeyOutput! @fdc_generated(from: "SubscriptionType", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `User` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `User`.
+  """
+  user_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: User_Data!
+  ): User_KeyOutput! @fdc_generated(from: "User", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update `Comment` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `Comment`.
+  """
+  comment_upsertMany(
+    """
+    List of data objects to insert or update if it already exists.
+    """
+    data: [Comment_Data!]!
+  ): [Comment_KeyOutput!]! @fdc_generated(from: "Comment", purpose: UPSERT_MULTIPLE)
+  """
+  ✨ Insert or update `Dataset` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `Dataset`.
+  """
+  dataset_upsertMany(
+    """
+    List of data objects to insert or update if it already exists.
+    """
+    data: [Dataset_Data!]!
+  ): [Dataset_KeyOutput!]! @fdc_generated(from: "Dataset", purpose: UPSERT_MULTIPLE)
+  """
+  ✨ Insert or update `File` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `File`.
+  """
+  file_upsertMany(
+    """
+    List of data objects to insert or update if it already exists.
+    """
+    data: [File_Data!]!
+  ): [File_KeyOutput!]! @fdc_generated(from: "File", purpose: UPSERT_MULTIPLE)
+  """
+  ✨ Insert or update `Institution` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `Institution`.
+  """
+  institution_upsertMany(
+    """
+    List of data objects to insert or update if it already exists.
+    """
+    data: [Institution_Data!]!
+  ): [Institution_KeyOutput!]! @fdc_generated(from: "Institution", purpose: UPSERT_MULTIPLE)
+  """
+  ✨ Insert or update `SubscriptionType` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `SubscriptionType`.
+  """
+  subscriptionType_upsertMany(
+    """
+    List of data objects to insert or update if it already exists.
+    """
+    data: [SubscriptionType_Data!]!
+  ): [SubscriptionType_KeyOutput!]! @fdc_generated(from: "SubscriptionType", purpose: UPSERT_MULTIPLE)
+  """
+  ✨ Insert or update `User` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `User`.
+  """
+  user_upsertMany(
+    """
+    List of data objects to insert or update if it already exists.
+    """
+    data: [User_Data!]!
+  ): [User_KeyOutput!]! @fdc_generated(from: "User", purpose: UPSERT_MULTIPLE)
+  """
+  ✨ Update a single `Comment` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `Comment` or `null` if not found.
+  """
+  comment_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Comment_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Comment_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: Comment_Data!
+  ): Comment_KeyOutput @fdc_generated(from: "Comment", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `Dataset` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `Dataset` or `null` if not found.
+  """
+  dataset_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Dataset_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Dataset_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: Dataset_Data!
+  ): Dataset_KeyOutput @fdc_generated(from: "Dataset", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `File` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `File` or `null` if not found.
+  """
+  file_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: File_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: File_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: File_Data!
+  ): File_KeyOutput @fdc_generated(from: "File", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `Institution` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `Institution` or `null` if not found.
+  """
+  institution_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Institution_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Institution_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: Institution_Data!
+  ): Institution_KeyOutput @fdc_generated(from: "Institution", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `SubscriptionType` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `SubscriptionType` or `null` if not found.
+  """
+  subscriptionType_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: SubscriptionType_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: SubscriptionType_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: SubscriptionType_Data!
+  ): SubscriptionType_KeyOutput @fdc_generated(from: "SubscriptionType", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `User` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `User` or `null` if not found.
+  """
+  user_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: User_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: User_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: User_Data!
+  ): User_KeyOutput @fdc_generated(from: "User", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update `Comment` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  comment_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: Comment_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: Comment_Data!
+  ): Int! @fdc_generated(from: "Comment", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `Dataset` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  dataset_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: Dataset_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: Dataset_Data!
+  ): Int! @fdc_generated(from: "Dataset", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `File` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  file_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: File_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: File_Data!
+  ): Int! @fdc_generated(from: "File", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `Institution` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  institution_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: Institution_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: Institution_Data!
+  ): Int! @fdc_generated(from: "Institution", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `SubscriptionType` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  subscriptionType_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: SubscriptionType_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: SubscriptionType_Data!
+  ): Int! @fdc_generated(from: "SubscriptionType", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `User` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  user_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: User_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: User_Data!
+  ): Int! @fdc_generated(from: "User", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Delete a single `Comment` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  comment_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Comment_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Comment_FirstRow
+  ): Comment_KeyOutput @fdc_generated(from: "Comment", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `Dataset` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  dataset_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Dataset_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Dataset_FirstRow
+  ): Dataset_KeyOutput @fdc_generated(from: "Dataset", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `File` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  file_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: File_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: File_FirstRow
+  ): File_KeyOutput @fdc_generated(from: "File", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `Institution` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  institution_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Institution_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Institution_FirstRow
+  ): Institution_KeyOutput @fdc_generated(from: "Institution", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `SubscriptionType` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  subscriptionType_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: SubscriptionType_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: SubscriptionType_FirstRow
+  ): SubscriptionType_KeyOutput @fdc_generated(from: "SubscriptionType", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `User` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  user_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: User_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: User_FirstRow
+  ): User_KeyOutput @fdc_generated(from: "User", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete `Comment` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  comment_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: Comment_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "Comment", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `Dataset` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  dataset_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: Dataset_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "Dataset", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `File` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  file_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: File_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "File", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `Institution` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  institution_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: Institution_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "Institution", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `SubscriptionType` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  subscriptionType_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: SubscriptionType_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "SubscriptionType", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `User` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  user_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: User_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "User", purpose: DELETE_MULTIPLE)
+}

@@ -1,0 +1,55 @@
+type User @table {
+  username: String!
+  email: String!
+  createdAt: Timestamp!
+  role: String!
+  displayName: String
+  institution: Institution
+}
+
+type Institution @table {
+  name: String!
+  type: String!
+  createdAt: Timestamp!
+  description: String
+  website: String
+}
+
+type Dataset @table {
+  title: String!
+  description: String!
+  publicationDate: Date!
+  isPublic: Boolean!
+  createdAt: Timestamp!
+  institution: Institution
+  publisher: User
+  lastUpdated: Timestamp
+  tags: [String]
+  category: String
+}
+
+type File @table {
+  fileName: String!
+  fileType: String!
+  fileSize: Int64!
+  fileUrl: String!
+  version: String!
+  createdAt: Timestamp!
+  dataset: Dataset
+  description: String
+}
+
+type Comment @table {
+  content: String!
+  createdAt: Timestamp!
+  user: User
+  dataset: Dataset
+  parentComment: Comment
+}
+
+type SubscriptionType @table {
+  createdAt: Timestamp!
+  user: User
+  dataset: Dataset
+  notificationPreference: String
+}

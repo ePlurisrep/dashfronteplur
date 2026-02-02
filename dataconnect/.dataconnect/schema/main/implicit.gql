@@ -1,0 +1,72 @@
+extend type Comment {
+  """
+  ✨ Implicit primary key field. It's a UUID column default to a generated new value. See `@table` for how to customize it.
+  """
+  id: UUID! @default(expr: "uuidV4()") @fdc_generated(from: "Comment", purpose: IMPLICIT_KEY_FIELD)
+  """
+  ✨ Implicit foreign key field based on `Comment`.`dataset`. It must match the value of `Dataset`.`id`. See `@ref` for how to customize it.
+  """
+  datasetId: UUID @fdc_generated(from: "Comment.dataset", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `Comment`.`parentComment`. It must match the value of `Comment`.`id`. See `@ref` for how to customize it.
+  """
+  parentCommentId: UUID @fdc_generated(from: "Comment.parentComment", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `Comment`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID @fdc_generated(from: "Comment.user", purpose: IMPLICIT_REF_FIELD)
+}
+extend type Dataset {
+  """
+  ✨ Implicit primary key field. It's a UUID column default to a generated new value. See `@table` for how to customize it.
+  """
+  id: UUID! @default(expr: "uuidV4()") @fdc_generated(from: "Dataset", purpose: IMPLICIT_KEY_FIELD)
+  """
+  ✨ Implicit foreign key field based on `Dataset`.`institution`. It must match the value of `Institution`.`id`. See `@ref` for how to customize it.
+  """
+  institutionId: UUID @fdc_generated(from: "Dataset.institution", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `Dataset`.`publisher`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  publisherId: UUID @fdc_generated(from: "Dataset.publisher", purpose: IMPLICIT_REF_FIELD)
+}
+extend type File {
+  """
+  ✨ Implicit primary key field. It's a UUID column default to a generated new value. See `@table` for how to customize it.
+  """
+  id: UUID! @default(expr: "uuidV4()") @fdc_generated(from: "File", purpose: IMPLICIT_KEY_FIELD)
+  """
+  ✨ Implicit foreign key field based on `File`.`dataset`. It must match the value of `Dataset`.`id`. See `@ref` for how to customize it.
+  """
+  datasetId: UUID @fdc_generated(from: "File.dataset", purpose: IMPLICIT_REF_FIELD)
+}
+extend type Institution {
+  """
+  ✨ Implicit primary key field. It's a UUID column default to a generated new value. See `@table` for how to customize it.
+  """
+  id: UUID! @default(expr: "uuidV4()") @fdc_generated(from: "Institution", purpose: IMPLICIT_KEY_FIELD)
+}
+extend type SubscriptionType {
+  """
+  ✨ Implicit primary key field. It's a UUID column default to a generated new value. See `@table` for how to customize it.
+  """
+  id: UUID! @default(expr: "uuidV4()") @fdc_generated(from: "SubscriptionType", purpose: IMPLICIT_KEY_FIELD)
+  """
+  ✨ Implicit foreign key field based on `SubscriptionType`.`dataset`. It must match the value of `Dataset`.`id`. See `@ref` for how to customize it.
+  """
+  datasetId: UUID @fdc_generated(from: "SubscriptionType.dataset", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `SubscriptionType`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID @fdc_generated(from: "SubscriptionType.user", purpose: IMPLICIT_REF_FIELD)
+}
+extend type User {
+  """
+  ✨ Implicit primary key field. It's a UUID column default to a generated new value. See `@table` for how to customize it.
+  """
+  id: UUID! @default(expr: "uuidV4()") @fdc_generated(from: "User", purpose: IMPLICIT_KEY_FIELD)
+  """
+  ✨ Implicit foreign key field based on `User`.`institution`. It must match the value of `Institution`.`id`. See `@ref` for how to customize it.
+  """
+  institutionId: UUID @fdc_generated(from: "User.institution", purpose: IMPLICIT_REF_FIELD)
+}

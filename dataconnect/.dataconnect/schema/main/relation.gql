@@ -1,0 +1,867 @@
+extend type Comment {
+  """
+  ✨ List `Comment` objects in a one-to-many relationship (where `Comment`.`parentComment` is this object).
+  """
+  comments_on_parentComment(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: Comment_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [Comment_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: Comment_Having
+  ): [Comment!]! @fdc_generated(from: "Comment.parentComment", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  Implicit metadata field that cannot be written. It provides extra information about query results.
+  """
+  _metadata: _Metadata @fdc_generated(from: "Comment", purpose: METADATA_FIELD)
+  """
+  ✨ Count the number of rows in the `Comment` table.
+  """
+  _count: Int! @fdc_generated(from: "Comment.", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Comment` table where the `content` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  content_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Comment.content", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Comment` table where the `createdAt` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  createdAt_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Comment.createdAt", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Comment` table where the `datasetId` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  datasetId_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Comment.datasetId", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Comment` table where the `id` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  id_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Comment.id", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Comment` table where the `parentCommentId` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  parentCommentId_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Comment.parentCommentId", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Comment` table where the `userId` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  userId_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Comment.userId", purpose: QUERY_COUNT)
+  """
+  ✨ Minimum of the `createdAt` field in the `Comment` table.
+  """
+  createdAt_min: Timestamp @fdc_generated(from: "Comment.createdAt", purpose: QUERY_MIN)
+  """
+  ✨ Maximum of the `createdAt` field in the `Comment` table.
+  """
+  createdAt_max: Timestamp @fdc_generated(from: "Comment.createdAt", purpose: QUERY_MAX)
+  """
+  A generated field that is used for caching results in SDKs.
+  """
+  _id: ID! @fdc_generated(from: "Comment.id", purpose: GLOBAL_ID)
+}
+extend type Dataset {
+  """
+  ✨ List `Comment` objects in a one-to-many relationship (where `Comment`.`dataset` is this object).
+  """
+  comments_on_dataset(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: Comment_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [Comment_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: Comment_Having
+  ): [Comment!]! @fdc_generated(from: "Comment.dataset", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `File` objects in a one-to-many relationship (where `File`.`dataset` is this object).
+  """
+  files_on_dataset(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: File_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [File_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: File_Having
+  ): [File!]! @fdc_generated(from: "File.dataset", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `SubscriptionType` objects in a one-to-many relationship (where `SubscriptionType`.`dataset` is this object).
+  """
+  subscriptionTypes_on_dataset(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: SubscriptionType_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [SubscriptionType_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: SubscriptionType_Having
+  ): [SubscriptionType!]! @fdc_generated(from: "SubscriptionType.dataset", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  Implicit metadata field that cannot be written. It provides extra information about query results.
+  """
+  _metadata: _Metadata @fdc_generated(from: "Dataset", purpose: METADATA_FIELD)
+  """
+  ✨ Count the number of rows in the `Dataset` table.
+  """
+  _count: Int! @fdc_generated(from: "Dataset.", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Dataset` table where the `category` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  category_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Dataset.category", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Dataset` table where the `createdAt` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  createdAt_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Dataset.createdAt", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Dataset` table where the `description` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  description_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Dataset.description", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Dataset` table where the `id` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  id_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Dataset.id", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Dataset` table where the `institutionId` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  institutionId_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Dataset.institutionId", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Dataset` table where the `isPublic` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  isPublic_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Dataset.isPublic", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Dataset` table where the `lastUpdated` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  lastUpdated_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Dataset.lastUpdated", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Dataset` table where the `publicationDate` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  publicationDate_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Dataset.publicationDate", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Dataset` table where the `publisherId` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  publisherId_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Dataset.publisherId", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Dataset` table where the `title` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  title_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Dataset.title", purpose: QUERY_COUNT)
+  """
+  ✨ Minimum of the `createdAt` field in the `Dataset` table.
+  """
+  createdAt_min: Timestamp @fdc_generated(from: "Dataset.createdAt", purpose: QUERY_MIN)
+  """
+  ✨ Minimum of the `lastUpdated` field in the `Dataset` table.
+  """
+  lastUpdated_min: Timestamp @fdc_generated(from: "Dataset.lastUpdated", purpose: QUERY_MIN)
+  """
+  ✨ Minimum of the `publicationDate` field in the `Dataset` table.
+  """
+  publicationDate_min: Date @fdc_generated(from: "Dataset.publicationDate", purpose: QUERY_MIN)
+  """
+  ✨ Maximum of the `createdAt` field in the `Dataset` table.
+  """
+  createdAt_max: Timestamp @fdc_generated(from: "Dataset.createdAt", purpose: QUERY_MAX)
+  """
+  ✨ Maximum of the `lastUpdated` field in the `Dataset` table.
+  """
+  lastUpdated_max: Timestamp @fdc_generated(from: "Dataset.lastUpdated", purpose: QUERY_MAX)
+  """
+  ✨ Maximum of the `publicationDate` field in the `Dataset` table.
+  """
+  publicationDate_max: Date @fdc_generated(from: "Dataset.publicationDate", purpose: QUERY_MAX)
+  """
+  A generated field that is used for caching results in SDKs.
+  """
+  _id: ID! @fdc_generated(from: "Dataset.id", purpose: GLOBAL_ID)
+}
+extend type File {
+  """
+  Implicit metadata field that cannot be written. It provides extra information about query results.
+  """
+  _metadata: _Metadata @fdc_generated(from: "File", purpose: METADATA_FIELD)
+  """
+  ✨ Count the number of rows in the `File` table.
+  """
+  _count: Int! @fdc_generated(from: "File.", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `File` table where the `createdAt` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  createdAt_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "File.createdAt", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `File` table where the `datasetId` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  datasetId_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "File.datasetId", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `File` table where the `description` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  description_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "File.description", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `File` table where the `fileName` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  fileName_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "File.fileName", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `File` table where the `fileSize` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  fileSize_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "File.fileSize", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `File` table where the `fileType` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  fileType_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "File.fileType", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `File` table where the `fileUrl` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  fileUrl_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "File.fileUrl", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `File` table where the `id` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  id_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "File.id", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `File` table where the `version` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  version_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "File.version", purpose: QUERY_COUNT)
+  """
+  ✨ Sum the `fileSize` field in the `File` table.
+  """
+  fileSize_sum(
+    """
+    Set to true to sum the distinct values.
+    """
+    distinct: Boolean = false
+  ): Int64 @fdc_generated(from: "File.fileSize", purpose: QUERY_SUM)
+  """
+  ✨ Average the `fileSize` field in the `File` table.
+  """
+  fileSize_avg(
+    """
+    Set to true to average the distinct values.
+    """
+    distinct: Boolean = false
+  ): Float @fdc_generated(from: "File.fileSize", purpose: QUERY_AVG)
+  """
+  ✨ Minimum of the `createdAt` field in the `File` table.
+  """
+  createdAt_min: Timestamp @fdc_generated(from: "File.createdAt", purpose: QUERY_MIN)
+  """
+  ✨ Minimum of the `fileSize` field in the `File` table.
+  """
+  fileSize_min: Int64 @fdc_generated(from: "File.fileSize", purpose: QUERY_MIN)
+  """
+  ✨ Maximum of the `createdAt` field in the `File` table.
+  """
+  createdAt_max: Timestamp @fdc_generated(from: "File.createdAt", purpose: QUERY_MAX)
+  """
+  ✨ Maximum of the `fileSize` field in the `File` table.
+  """
+  fileSize_max: Int64 @fdc_generated(from: "File.fileSize", purpose: QUERY_MAX)
+  """
+  A generated field that is used for caching results in SDKs.
+  """
+  _id: ID! @fdc_generated(from: "File.id", purpose: GLOBAL_ID)
+}
+extend type Institution {
+  """
+  ✨ List `Dataset` objects in a one-to-many relationship (where `Dataset`.`institution` is this object).
+  """
+  datasets_on_institution(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: Dataset_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [Dataset_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: Dataset_Having
+  ): [Dataset!]! @fdc_generated(from: "Dataset.institution", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `User` objects in a one-to-many relationship (where `User`.`institution` is this object).
+  """
+  users_on_institution(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: User_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [User_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: User_Having
+  ): [User!]! @fdc_generated(from: "User.institution", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  Implicit metadata field that cannot be written. It provides extra information about query results.
+  """
+  _metadata: _Metadata @fdc_generated(from: "Institution", purpose: METADATA_FIELD)
+  """
+  ✨ Count the number of rows in the `Institution` table.
+  """
+  _count: Int! @fdc_generated(from: "Institution.", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Institution` table where the `createdAt` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  createdAt_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Institution.createdAt", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Institution` table where the `description` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  description_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Institution.description", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Institution` table where the `id` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  id_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Institution.id", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Institution` table where the `name` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  name_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Institution.name", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Institution` table where the `type` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  type_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Institution.type", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `Institution` table where the `website` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  website_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "Institution.website", purpose: QUERY_COUNT)
+  """
+  ✨ Minimum of the `createdAt` field in the `Institution` table.
+  """
+  createdAt_min: Timestamp @fdc_generated(from: "Institution.createdAt", purpose: QUERY_MIN)
+  """
+  ✨ Maximum of the `createdAt` field in the `Institution` table.
+  """
+  createdAt_max: Timestamp @fdc_generated(from: "Institution.createdAt", purpose: QUERY_MAX)
+  """
+  A generated field that is used for caching results in SDKs.
+  """
+  _id: ID! @fdc_generated(from: "Institution.id", purpose: GLOBAL_ID)
+}
+extend type SubscriptionType {
+  """
+  Implicit metadata field that cannot be written. It provides extra information about query results.
+  """
+  _metadata: _Metadata @fdc_generated(from: "SubscriptionType", purpose: METADATA_FIELD)
+  """
+  ✨ Count the number of rows in the `SubscriptionType` table.
+  """
+  _count: Int! @fdc_generated(from: "SubscriptionType.", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `SubscriptionType` table where the `createdAt` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  createdAt_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "SubscriptionType.createdAt", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `SubscriptionType` table where the `datasetId` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  datasetId_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "SubscriptionType.datasetId", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `SubscriptionType` table where the `id` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  id_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "SubscriptionType.id", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `SubscriptionType` table where the `notificationPreference` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  notificationPreference_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "SubscriptionType.notificationPreference", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `SubscriptionType` table where the `userId` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  userId_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "SubscriptionType.userId", purpose: QUERY_COUNT)
+  """
+  ✨ Minimum of the `createdAt` field in the `SubscriptionType` table.
+  """
+  createdAt_min: Timestamp @fdc_generated(from: "SubscriptionType.createdAt", purpose: QUERY_MIN)
+  """
+  ✨ Maximum of the `createdAt` field in the `SubscriptionType` table.
+  """
+  createdAt_max: Timestamp @fdc_generated(from: "SubscriptionType.createdAt", purpose: QUERY_MAX)
+  """
+  A generated field that is used for caching results in SDKs.
+  """
+  _id: ID! @fdc_generated(from: "SubscriptionType.id", purpose: GLOBAL_ID)
+}
+extend type User {
+  """
+  ✨ List `Comment` objects in a one-to-many relationship (where `Comment`.`user` is this object).
+  """
+  comments_on_user(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: Comment_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [Comment_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: Comment_Having
+  ): [Comment!]! @fdc_generated(from: "Comment.user", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `Dataset` objects in a one-to-many relationship (where `Dataset`.`publisher` is this object).
+  """
+  datasets_on_publisher(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: Dataset_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [Dataset_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: Dataset_Having
+  ): [Dataset!]! @fdc_generated(from: "Dataset.publisher", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `SubscriptionType` objects in a one-to-many relationship (where `SubscriptionType`.`user` is this object).
+  """
+  subscriptionTypes_on_user(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: SubscriptionType_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [SubscriptionType_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+
+    """
+    Set to true to return distinct results.
+    """
+    distinct: Boolean = false
+
+    """
+    Filter condition to apply to the groups of aggregate queries.
+    """
+    having: SubscriptionType_Having
+  ): [SubscriptionType!]! @fdc_generated(from: "SubscriptionType.user", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  Implicit metadata field that cannot be written. It provides extra information about query results.
+  """
+  _metadata: _Metadata @fdc_generated(from: "User", purpose: METADATA_FIELD)
+  """
+  ✨ Count the number of rows in the `User` table.
+  """
+  _count: Int! @fdc_generated(from: "User.", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `User` table where the `createdAt` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  createdAt_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "User.createdAt", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `User` table where the `displayName` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  displayName_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "User.displayName", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `User` table where the `email` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  email_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "User.email", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `User` table where the `id` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  id_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "User.id", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `User` table where the `institutionId` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  institutionId_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "User.institutionId", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `User` table where the `role` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  role_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "User.role", purpose: QUERY_COUNT)
+  """
+  ✨ Count the number of rows in the `User` table where the `username` field is non-null. Pass the `distinct` argument to instead count the number of distinct values.
+  """
+  username_count(
+    """
+    Set to true to count the number of distinct values.
+    """
+    distinct: Boolean = false
+  ): Int! @fdc_generated(from: "User.username", purpose: QUERY_COUNT)
+  """
+  ✨ Minimum of the `createdAt` field in the `User` table.
+  """
+  createdAt_min: Timestamp @fdc_generated(from: "User.createdAt", purpose: QUERY_MIN)
+  """
+  ✨ Maximum of the `createdAt` field in the `User` table.
+  """
+  createdAt_max: Timestamp @fdc_generated(from: "User.createdAt", purpose: QUERY_MAX)
+  """
+  A generated field that is used for caching results in SDKs.
+  """
+  _id: ID! @fdc_generated(from: "User.id", purpose: GLOBAL_ID)
+}
