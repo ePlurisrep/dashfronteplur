@@ -139,3 +139,423 @@ Before we get started, keep in mind:
 [debug] [2026-02-02T18:11:21.485Z] >>> [apiv2][query] GET https://firebaseapphosting.googleapis.com/v1beta/projects/thedasheplur/locations/-/backends 
 [debug] [2026-02-02T18:11:21.862Z] <<< [apiv2][status] GET https://firebaseapphosting.googleapis.com/v1beta/projects/thedasheplur/locations/-/backends 200
 [debug] [2026-02-02T18:11:21.862Z] <<< [apiv2][body] GET https://firebaseapphosting.googleapis.com/v1beta/projects/thedasheplur/locations/-/backends {}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T18:22:47.915Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T18:22:47.917Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[debug] [2026-02-02T18:22:47.919Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:47.920Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:47.920Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T18:22:47.921Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[debug] [2026-02-02T18:22:47.921Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:47.922Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:47.923Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo [none]
+[debug] [2026-02-02T18:22:47.928Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo [none]
+[debug] [2026-02-02T18:22:48.046Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo 200
+[debug] [2026-02-02T18:22:48.047Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo {"name":"projects/thedasheplur/billingInfo","projectId":"thedasheplur","billingAccountName":"billingAccounts/012352-8B5810-5A78B1","billingEnabled":true}
+[debug] [2026-02-02T18:22:48.060Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.061Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.062Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.062Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.063Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.063Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.064Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.064Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.067Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.068Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.069Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.070Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.096Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.096Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.096Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com [none]
+[debug] [2026-02-02T18:22:48.096Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:22:48.100Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/storage.googleapis.com [none]
+[debug] [2026-02-02T18:22:48.100Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/storage.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:22:48.103Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/identitytoolkit.googleapis.com [none]
+[debug] [2026-02-02T18:22:48.103Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/identitytoolkit.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:22:48.106Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/fcm.googleapis.com [none]
+[debug] [2026-02-02T18:22:48.106Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/fcm.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:22:48.109Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-02-02T18:22:48.109Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:22:48.111Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseremoteconfig.googleapis.com [none]
+[debug] [2026-02-02T18:22:48.111Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseremoteconfig.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:22:48.113Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com [none]
+[debug] [2026-02-02T18:22:48.114Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:22:48.212Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo 200
+[debug] [2026-02-02T18:22:48.215Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo {"name":"projects/thedasheplur/billingInfo","projectId":"thedasheplur","billingAccountName":"billingAccounts/012352-8B5810-5A78B1","billingEnabled":true}
+[debug] [2026-02-02T18:22:48.219Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.219Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.220Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.220Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.226Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.226Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.226Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.228Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.228Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.228Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.229Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.229Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.241Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.242Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.242Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com [none]
+[debug] [2026-02-02T18:22:48.242Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:22:48.246Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/storage.googleapis.com [none]
+[debug] [2026-02-02T18:22:48.247Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/storage.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:22:48.251Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/identitytoolkit.googleapis.com [none]
+[debug] [2026-02-02T18:22:48.254Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/identitytoolkit.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:22:48.257Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/fcm.googleapis.com [none]
+[debug] [2026-02-02T18:22:48.258Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/fcm.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:22:48.261Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-02-02T18:22:48.261Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:22:48.264Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseremoteconfig.googleapis.com [none]
+[debug] [2026-02-02T18:22:48.264Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseremoteconfig.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:22:48.267Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com [none]
+[debug] [2026-02-02T18:22:48.267Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:22:48.366Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com 403
+[debug] [2026-02-02T18:22:48.366Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com [omitted]
+[debug] [2026-02-02T18:22:48.434Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com 200
+[debug] [2026-02-02T18:22:48.434Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com [omitted]
+[debug] [2026-02-02T18:22:48.452Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseremoteconfig.googleapis.com 200
+[debug] [2026-02-02T18:22:48.453Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseremoteconfig.googleapis.com [omitted]
+[debug] [2026-02-02T18:22:48.488Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/identitytoolkit.googleapis.com 200
+[debug] [2026-02-02T18:22:48.488Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/identitytoolkit.googleapis.com [omitted]
+[debug] [2026-02-02T18:22:48.504Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/fcm.googleapis.com 200
+[debug] [2026-02-02T18:22:48.504Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/fcm.googleapis.com [omitted]
+[debug] [2026-02-02T18:22:48.520Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com 200
+[debug] [2026-02-02T18:22:48.521Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2026-02-02T18:22:48.523Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/storage.googleapis.com 200
+[debug] [2026-02-02T18:22:48.523Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/storage.googleapis.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T18:22:48.540Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com 403
+[debug] [2026-02-02T18:22:48.540Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T18:22:48.565Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T18:22:48.565Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[debug] [2026-02-02T18:22:48.565Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.566Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.566Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo [none]
+[debug] [2026-02-02T18:22:48.603Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/identitytoolkit.googleapis.com 200
+[debug] [2026-02-02T18:22:48.604Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/identitytoolkit.googleapis.com [omitted]
+[debug] [2026-02-02T18:22:48.625Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com 200
+[debug] [2026-02-02T18:22:48.626Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com [omitted]
+[debug] [2026-02-02T18:22:48.635Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/fcm.googleapis.com 200
+[debug] [2026-02-02T18:22:48.635Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/fcm.googleapis.com [omitted]
+[debug] [2026-02-02T18:22:48.651Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseremoteconfig.googleapis.com 200
+[debug] [2026-02-02T18:22:48.651Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseremoteconfig.googleapis.com [omitted]
+[debug] [2026-02-02T18:22:48.665Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/storage.googleapis.com 200
+[debug] [2026-02-02T18:22:48.665Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/storage.googleapis.com [omitted]
+[debug] [2026-02-02T18:22:48.679Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com 200
+[debug] [2026-02-02T18:22:48.679Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2026-02-02T18:22:48.888Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo 200
+[debug] [2026-02-02T18:22:48.891Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo {"name":"projects/thedasheplur/billingInfo","projectId":"thedasheplur","billingAccountName":"billingAccounts/012352-8B5810-5A78B1","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T18:22:48.894Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T18:22:48.894Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T18:22:48.950Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T18:22:48.951Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[debug] [2026-02-02T18:22:48.951Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.951Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:48.951Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo [none]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T18:22:49.025Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T18:22:49.026Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[debug] [2026-02-02T18:22:49.026Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:49.026Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:22:49.026Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo [none]
+[debug] [2026-02-02T18:22:49.041Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo 200
+[debug] [2026-02-02T18:22:49.041Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo {"name":"projects/thedasheplur/billingInfo","projectId":"thedasheplur","billingAccountName":"billingAccounts/012352-8B5810-5A78B1","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T18:22:49.048Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T18:22:49.049Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[debug] [2026-02-02T18:22:49.099Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo 200
+[debug] [2026-02-02T18:22:49.100Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo {"name":"projects/thedasheplur/billingInfo","projectId":"thedasheplur","billingAccountName":"billingAccounts/012352-8B5810-5A78B1","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T18:22:49.114Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T18:22:49.114Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T18:48:42.425Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T18:48:42.430Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[debug] [2026-02-02T18:48:42.434Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:48:42.437Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:48:42.442Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo [none]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T18:48:42.464Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T18:48:42.464Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[debug] [2026-02-02T18:48:42.465Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:48:42.465Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:48:42.466Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo [none]
+[debug] [2026-02-02T18:48:42.623Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo 200
+[debug] [2026-02-02T18:48:42.623Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo {"name":"projects/thedasheplur/billingInfo","projectId":"thedasheplur","billingAccountName":"billingAccounts/012352-8B5810-5A78B1","billingEnabled":true}
+[debug] [2026-02-02T18:48:42.651Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:48:42.651Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:48:42.654Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:48:42.654Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:48:42.713Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:48:42.713Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:48:42.716Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com [none]
+[debug] [2026-02-02T18:48:42.716Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:48:42.724Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-02-02T18:48:42.724Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:48:42.728Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com [none]
+[debug] [2026-02-02T18:48:42.728Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:48:42.764Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo 200
+[debug] [2026-02-02T18:48:42.765Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo {"name":"projects/thedasheplur/billingInfo","projectId":"thedasheplur","billingAccountName":"billingAccounts/012352-8B5810-5A78B1","billingEnabled":true}
+[debug] [2026-02-02T18:48:42.766Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:48:42.767Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:48:42.767Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:48:42.767Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:48:42.787Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:48:42.787Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:48:42.787Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com [none]
+[debug] [2026-02-02T18:48:42.788Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:48:42.792Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-02-02T18:48:42.792Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:48:42.796Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com [none]
+[debug] [2026-02-02T18:48:42.796Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:48:43.094Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com 403
+[debug] [2026-02-02T18:48:43.094Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com [omitted]
+[debug] [2026-02-02T18:48:43.117Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com 403
+[debug] [2026-02-02T18:48:43.119Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com [omitted]
+[debug] [2026-02-02T18:48:43.188Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com 200
+[debug] [2026-02-02T18:48:43.191Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com [omitted]
+[debug] [2026-02-02T18:48:43.215Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com 200
+[debug] [2026-02-02T18:48:43.225Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T18:48:43.272Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T18:48:43.272Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[debug] [2026-02-02T18:48:43.273Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:48:43.273Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:48:43.273Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo [none]
+[debug] [2026-02-02T18:48:43.295Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com 200
+[debug] [2026-02-02T18:48:43.295Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2026-02-02T18:48:43.305Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com 200
+[debug] [2026-02-02T18:48:43.305Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com [omitted]
+[debug] [2026-02-02T18:48:43.349Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo 200
+[debug] [2026-02-02T18:48:43.350Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo {"name":"projects/thedasheplur/billingInfo","projectId":"thedasheplur","billingAccountName":"billingAccounts/012352-8B5810-5A78B1","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T18:48:43.360Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T18:48:43.360Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T18:48:43.668Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T18:48:43.668Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[debug] [2026-02-02T18:48:43.674Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:48:43.674Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:48:43.674Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo [none]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T18:48:43.752Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T18:48:43.758Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[debug] [2026-02-02T18:48:43.759Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:48:43.759Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:48:43.759Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo [none]
+[debug] [2026-02-02T18:48:43.784Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo 200
+[debug] [2026-02-02T18:48:43.788Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo {"name":"projects/thedasheplur/billingInfo","projectId":"thedasheplur","billingAccountName":"billingAccounts/012352-8B5810-5A78B1","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T18:48:43.794Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T18:48:43.794Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[debug] [2026-02-02T18:48:44.064Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo 200
+[debug] [2026-02-02T18:48:44.064Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo {"name":"projects/thedasheplur/billingInfo","projectId":"thedasheplur","billingAccountName":"billingAccounts/012352-8B5810-5A78B1","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T18:48:44.067Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T18:48:44.067Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T18:50:57.420Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T18:50:57.421Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[debug] [2026-02-02T18:50:57.426Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:50:57.427Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:50:57.430Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo [none]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T18:50:57.576Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T18:50:57.576Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[debug] [2026-02-02T18:50:57.577Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:50:57.577Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:50:57.577Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo [none]
+[debug] [2026-02-02T18:50:57.704Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo 200
+[debug] [2026-02-02T18:50:57.704Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo {"name":"projects/thedasheplur/billingInfo","projectId":"thedasheplur","billingAccountName":"billingAccounts/012352-8B5810-5A78B1","billingEnabled":true}
+[debug] [2026-02-02T18:50:57.722Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:50:57.722Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:50:57.724Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:50:57.725Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:50:57.763Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:50:57.765Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:50:57.766Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com [none]
+[debug] [2026-02-02T18:50:57.766Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:50:57.770Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-02-02T18:50:57.771Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:50:57.774Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com [none]
+[debug] [2026-02-02T18:50:57.774Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:50:57.846Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo 200
+[debug] [2026-02-02T18:50:57.849Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo {"name":"projects/thedasheplur/billingInfo","projectId":"thedasheplur","billingAccountName":"billingAccounts/012352-8B5810-5A78B1","billingEnabled":true}
+[debug] [2026-02-02T18:50:57.854Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:50:57.854Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:50:57.855Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:50:57.855Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:50:57.868Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:50:57.868Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:50:57.869Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com [none]
+[debug] [2026-02-02T18:50:57.869Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:50:57.872Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-02-02T18:50:57.872Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:50:57.876Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com [none]
+[debug] [2026-02-02T18:50:57.877Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T18:50:57.963Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com 403
+[debug] [2026-02-02T18:50:57.963Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com [omitted]
+[debug] [2026-02-02T18:50:58.072Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com 403
+[debug] [2026-02-02T18:50:58.072Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com [omitted]
+[debug] [2026-02-02T18:50:58.116Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com 200
+[debug] [2026-02-02T18:50:58.116Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2026-02-02T18:50:58.146Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com 200
+[debug] [2026-02-02T18:50:58.146Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com [omitted]
+[debug] [2026-02-02T18:50:58.190Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com 200
+[debug] [2026-02-02T18:50:58.190Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com [omitted]
+[debug] [2026-02-02T18:50:58.208Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com 200
+[debug] [2026-02-02T18:50:58.208Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T18:50:58.265Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T18:50:58.265Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[debug] [2026-02-02T18:50:58.266Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:50:58.266Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:50:58.266Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo [none]
+[debug] [2026-02-02T18:50:58.465Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo 200
+[debug] [2026-02-02T18:50:58.475Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo {"name":"projects/thedasheplur/billingInfo","projectId":"thedasheplur","billingAccountName":"billingAccounts/012352-8B5810-5A78B1","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T18:50:58.485Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T18:50:58.485Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T18:50:59.388Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T18:50:59.392Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[debug] [2026-02-02T18:50:59.394Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:50:59.394Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:50:59.394Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo [none]
+[debug] [2026-02-02T18:50:59.464Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo 200
+[debug] [2026-02-02T18:50:59.470Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo {"name":"projects/thedasheplur/billingInfo","projectId":"thedasheplur","billingAccountName":"billingAccounts/012352-8B5810-5A78B1","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T18:50:59.479Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T18:50:59.480Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T18:50:59.501Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T18:50:59.502Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[debug] [2026-02-02T18:50:59.502Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:50:59.502Z] Checked if tokens are valid: true, expires at: 1770059407627
+[debug] [2026-02-02T18:50:59.502Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo [none]
+[debug] [2026-02-02T18:50:59.605Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo 200
+[debug] [2026-02-02T18:50:59.605Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo {"name":"projects/thedasheplur/billingInfo","projectId":"thedasheplur","billingAccountName":"billingAccounts/012352-8B5810-5A78B1","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T18:50:59.616Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T18:50:59.616Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T19:18:39.504Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T19:18:39.506Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[debug] [2026-02-02T19:18:39.509Z] Checked if tokens are valid: true, expires at: 1770063517547
+[debug] [2026-02-02T19:18:39.509Z] Checked if tokens are valid: true, expires at: 1770063517547
+[debug] [2026-02-02T19:18:39.510Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T19:18:39.510Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[debug] [2026-02-02T19:18:39.511Z] Checked if tokens are valid: true, expires at: 1770063517547
+[debug] [2026-02-02T19:18:39.511Z] Checked if tokens are valid: true, expires at: 1770063517547
+[debug] [2026-02-02T19:18:39.513Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo [none]
+[debug] [2026-02-02T19:18:39.517Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo [none]
+[debug] [2026-02-02T19:18:39.668Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo 200
+[debug] [2026-02-02T19:18:39.674Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo {"name":"projects/thedasheplur/billingInfo","projectId":"thedasheplur","billingAccountName":"billingAccounts/012352-8B5810-5A78B1","billingEnabled":true}
+[debug] [2026-02-02T19:18:39.703Z] Checked if tokens are valid: true, expires at: 1770063517547
+[debug] [2026-02-02T19:18:39.703Z] Checked if tokens are valid: true, expires at: 1770063517547
+[debug] [2026-02-02T19:18:39.705Z] Checked if tokens are valid: true, expires at: 1770063517547
+[debug] [2026-02-02T19:18:39.705Z] Checked if tokens are valid: true, expires at: 1770063517547
+[debug] [2026-02-02T19:18:39.778Z] Checked if tokens are valid: true, expires at: 1770063517547
+[debug] [2026-02-02T19:18:39.779Z] Checked if tokens are valid: true, expires at: 1770063517547
+[debug] [2026-02-02T19:18:39.779Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com [none]
+[debug] [2026-02-02T19:18:39.779Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T19:18:39.791Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-02-02T19:18:39.791Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T19:18:39.794Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com [none]
+[debug] [2026-02-02T19:18:39.794Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T19:18:39.914Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo 200
+[debug] [2026-02-02T19:18:39.914Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo {"name":"projects/thedasheplur/billingInfo","projectId":"thedasheplur","billingAccountName":"billingAccounts/012352-8B5810-5A78B1","billingEnabled":true}
+[debug] [2026-02-02T19:18:39.926Z] Checked if tokens are valid: true, expires at: 1770063517547
+[debug] [2026-02-02T19:18:39.926Z] Checked if tokens are valid: true, expires at: 1770063517547
+[debug] [2026-02-02T19:18:39.929Z] Checked if tokens are valid: true, expires at: 1770063517547
+[debug] [2026-02-02T19:18:39.929Z] Checked if tokens are valid: true, expires at: 1770063517547
+[debug] [2026-02-02T19:18:39.953Z] Checked if tokens are valid: true, expires at: 1770063517547
+[debug] [2026-02-02T19:18:39.954Z] Checked if tokens are valid: true, expires at: 1770063517547
+[debug] [2026-02-02T19:18:39.954Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com [none]
+[debug] [2026-02-02T19:18:39.954Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T19:18:39.962Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-02-02T19:18:39.962Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T19:18:39.966Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com [none]
+[debug] [2026-02-02T19:18:39.966Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com  x-goog-user-project=thedasheplur
+[debug] [2026-02-02T19:18:40.056Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com 403
+[debug] [2026-02-02T19:18:40.056Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com [omitted]
+[debug] [2026-02-02T19:18:40.165Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com 200
+[debug] [2026-02-02T19:18:40.165Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com [omitted]
+[debug] [2026-02-02T19:18:40.194Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com 403
+[debug] [2026-02-02T19:18:40.194Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firebaseio.com [omitted]
+[debug] [2026-02-02T19:18:40.426Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com 200
+[debug] [2026-02-02T19:18:40.426Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/firestore.googleapis.com [omitted]
+[debug] [2026-02-02T19:18:40.448Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com 200
+[debug] [2026-02-02T19:18:40.448Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2026-02-02T19:18:40.457Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com 200
+[debug] [2026-02-02T19:18:40.457Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/thedasheplur/services/cloudfunctions.googleapis.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T19:18:40.491Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T19:18:40.496Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[debug] [2026-02-02T19:18:40.496Z] Checked if tokens are valid: true, expires at: 1770063517547
+[debug] [2026-02-02T19:18:40.496Z] Checked if tokens are valid: true, expires at: 1770063517547
+[debug] [2026-02-02T19:18:40.496Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo [none]
+[debug] [2026-02-02T19:18:40.604Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo 200
+[debug] [2026-02-02T19:18:40.605Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo {"name":"projects/thedasheplur/billingInfo","projectId":"thedasheplur","billingAccountName":"billingAccounts/012352-8B5810-5A78B1","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T19:18:40.621Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T19:18:40.622Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T19:18:40.811Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T19:18:40.812Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[debug] [2026-02-02T19:18:40.812Z] Checked if tokens are valid: true, expires at: 1770063517547
+[debug] [2026-02-02T19:18:40.812Z] Checked if tokens are valid: true, expires at: 1770063517547
+[debug] [2026-02-02T19:18:40.812Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo [none]
+[debug] [2026-02-02T19:18:40.889Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo 200
+[debug] [2026-02-02T19:18:40.890Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo {"name":"projects/thedasheplur/billingInfo","projectId":"thedasheplur","billingAccountName":"billingAccounts/012352-8B5810-5A78B1","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T19:18:40.892Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T19:18:40.892Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T19:18:40.919Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T19:18:40.920Z] > authorizing via signed-in user (eplurisinc@gmail.com)
+[debug] [2026-02-02T19:18:40.920Z] Checked if tokens are valid: true, expires at: 1770063517547
+[debug] [2026-02-02T19:18:40.920Z] Checked if tokens are valid: true, expires at: 1770063517547
+[debug] [2026-02-02T19:18:40.923Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo [none]
+[debug] [2026-02-02T19:18:41.003Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo 200
+[debug] [2026-02-02T19:18:41.003Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/thedasheplur/billingInfo {"name":"projects/thedasheplur/billingInfo","projectId":"thedasheplur","billingAccountName":"billingAccounts/012352-8B5810-5A78B1","billingEnabled":true}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-02T19:18:41.006Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-02T19:18:41.006Z] > authorizing via signed-in user (eplurisinc@gmail.com)
