@@ -1,8 +1,8 @@
 extend type Query {
   """
-  ✨ Look up a single `Comment` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  ✨ Look up a single `Assignment` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
   """
-  comment(
+  assignment(
     """
     The unique ID of the object.
     """
@@ -11,17 +11,17 @@ extend type Query {
     """
     The key used to identify the object.
     """
-    key: Comment_Key
+    key: Assignment_Key
 
     """
     Fetch the first row based on the filters and ordering.
     """
-    first: Comment_FirstRow
-  ): Comment @fdc_generated(from: "Comment", purpose: QUERY_SINGLE)
+    first: Assignment_FirstRow
+  ): Assignment @fdc_generated(from: "Assignment", purpose: QUERY_SINGLE)
   """
-  ✨ Look up a single `Dataset` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  ✨ Look up a single `Course` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
   """
-  dataset(
+  course(
     """
     The unique ID of the object.
     """
@@ -30,17 +30,31 @@ extend type Query {
     """
     The key used to identify the object.
     """
-    key: Dataset_Key
+    key: Course_Key
 
     """
     Fetch the first row based on the filters and ordering.
     """
-    first: Dataset_FirstRow
-  ): Dataset @fdc_generated(from: "Dataset", purpose: QUERY_SINGLE)
+    first: Course_FirstRow
+  ): Course @fdc_generated(from: "Course", purpose: QUERY_SINGLE)
   """
-  ✨ Look up a single `File` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  ✨ Look up a single `Enrollment` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
   """
-  file(
+  enrollment(
+    """
+    The key used to identify the object.
+    """
+    key: Enrollment_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Enrollment_FirstRow
+  ): Enrollment @fdc_generated(from: "Enrollment", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `Event` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  event(
     """
     The unique ID of the object.
     """
@@ -49,17 +63,17 @@ extend type Query {
     """
     The key used to identify the object.
     """
-    key: File_Key
+    key: Event_Key
 
     """
     Fetch the first row based on the filters and ordering.
     """
-    first: File_FirstRow
-  ): File @fdc_generated(from: "File", purpose: QUERY_SINGLE)
+    first: Event_FirstRow
+  ): Event @fdc_generated(from: "Event", purpose: QUERY_SINGLE)
   """
-  ✨ Look up a single `Institution` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  ✨ Look up a single `StudyGroup` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
   """
-  institution(
+  studyGroup(
     """
     The unique ID of the object.
     """
@@ -68,32 +82,13 @@ extend type Query {
     """
     The key used to identify the object.
     """
-    key: Institution_Key
+    key: StudyGroup_Key
 
     """
     Fetch the first row based on the filters and ordering.
     """
-    first: Institution_FirstRow
-  ): Institution @fdc_generated(from: "Institution", purpose: QUERY_SINGLE)
-  """
-  ✨ Look up a single `SubscriptionType` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
-  """
-  subscriptionType(
-    """
-    The unique ID of the object.
-    """
-    id: UUID
-
-    """
-    The key used to identify the object.
-    """
-    key: SubscriptionType_Key
-
-    """
-    Fetch the first row based on the filters and ordering.
-    """
-    first: SubscriptionType_FirstRow
-  ): SubscriptionType @fdc_generated(from: "SubscriptionType", purpose: QUERY_SINGLE)
+    first: StudyGroup_FirstRow
+  ): StudyGroup @fdc_generated(from: "StudyGroup", purpose: QUERY_SINGLE)
   """
   ✨ Look up a single `User` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
   """
@@ -114,18 +109,18 @@ extend type Query {
     first: User_FirstRow
   ): User @fdc_generated(from: "User", purpose: QUERY_SINGLE)
   """
-  ✨ List `Comment` objects in the table and return selected fields, optionally filtered by `where` conditions
+  ✨ List `Assignment` objects in the table and return selected fields, optionally filtered by `where` conditions
   """
-  comments(
+  assignments(
     """
     Filter condition to narrow down the query results.
     """
-    where: Comment_Filter
+    where: Assignment_Filter
 
     """
     Order the query results by specific fields.
     """
-    orderBy: [Comment_Order!]
+    orderBy: [Assignment_Order!]
 
     """
     Number of rows to skip before starting to return the results.
@@ -145,21 +140,21 @@ extend type Query {
     """
     Filter condition to apply to the groups of aggregate queries.
     """
-    having: Comment_Having
-  ): [Comment!]! @fdc_generated(from: "Comment", purpose: QUERY_MULTIPLE)
+    having: Assignment_Having
+  ): [Assignment!]! @fdc_generated(from: "Assignment", purpose: QUERY_MULTIPLE)
   """
-  ✨ List `Dataset` objects in the table and return selected fields, optionally filtered by `where` conditions
+  ✨ List `Course` objects in the table and return selected fields, optionally filtered by `where` conditions
   """
-  datasets(
+  courses(
     """
     Filter condition to narrow down the query results.
     """
-    where: Dataset_Filter
+    where: Course_Filter
 
     """
     Order the query results by specific fields.
     """
-    orderBy: [Dataset_Order!]
+    orderBy: [Course_Order!]
 
     """
     Number of rows to skip before starting to return the results.
@@ -179,21 +174,21 @@ extend type Query {
     """
     Filter condition to apply to the groups of aggregate queries.
     """
-    having: Dataset_Having
-  ): [Dataset!]! @fdc_generated(from: "Dataset", purpose: QUERY_MULTIPLE)
+    having: Course_Having
+  ): [Course!]! @fdc_generated(from: "Course", purpose: QUERY_MULTIPLE)
   """
-  ✨ List `File` objects in the table and return selected fields, optionally filtered by `where` conditions
+  ✨ List `Enrollment` objects in the table and return selected fields, optionally filtered by `where` conditions
   """
-  files(
+  enrollments(
     """
     Filter condition to narrow down the query results.
     """
-    where: File_Filter
+    where: Enrollment_Filter
 
     """
     Order the query results by specific fields.
     """
-    orderBy: [File_Order!]
+    orderBy: [Enrollment_Order!]
 
     """
     Number of rows to skip before starting to return the results.
@@ -213,21 +208,21 @@ extend type Query {
     """
     Filter condition to apply to the groups of aggregate queries.
     """
-    having: File_Having
-  ): [File!]! @fdc_generated(from: "File", purpose: QUERY_MULTIPLE)
+    having: Enrollment_Having
+  ): [Enrollment!]! @fdc_generated(from: "Enrollment", purpose: QUERY_MULTIPLE)
   """
-  ✨ List `Institution` objects in the table and return selected fields, optionally filtered by `where` conditions
+  ✨ List `Event` objects in the table and return selected fields, optionally filtered by `where` conditions
   """
-  institutions(
+  events(
     """
     Filter condition to narrow down the query results.
     """
-    where: Institution_Filter
+    where: Event_Filter
 
     """
     Order the query results by specific fields.
     """
-    orderBy: [Institution_Order!]
+    orderBy: [Event_Order!]
 
     """
     Number of rows to skip before starting to return the results.
@@ -247,21 +242,21 @@ extend type Query {
     """
     Filter condition to apply to the groups of aggregate queries.
     """
-    having: Institution_Having
-  ): [Institution!]! @fdc_generated(from: "Institution", purpose: QUERY_MULTIPLE)
+    having: Event_Having
+  ): [Event!]! @fdc_generated(from: "Event", purpose: QUERY_MULTIPLE)
   """
-  ✨ List `SubscriptionType` objects in the table and return selected fields, optionally filtered by `where` conditions
+  ✨ List `StudyGroup` objects in the table and return selected fields, optionally filtered by `where` conditions
   """
-  subscriptionTypes(
+  studyGroups(
     """
     Filter condition to narrow down the query results.
     """
-    where: SubscriptionType_Filter
+    where: StudyGroup_Filter
 
     """
     Order the query results by specific fields.
     """
-    orderBy: [SubscriptionType_Order!]
+    orderBy: [StudyGroup_Order!]
 
     """
     Number of rows to skip before starting to return the results.
@@ -281,8 +276,8 @@ extend type Query {
     """
     Filter condition to apply to the groups of aggregate queries.
     """
-    having: SubscriptionType_Having
-  ): [SubscriptionType!]! @fdc_generated(from: "SubscriptionType", purpose: QUERY_MULTIPLE)
+    having: StudyGroup_Having
+  ): [StudyGroup!]! @fdc_generated(from: "StudyGroup", purpose: QUERY_MULTIPLE)
   """
   ✨ List `User` objects in the table and return selected fields, optionally filtered by `where` conditions
   """

@@ -1,55 +1,56 @@
 type User @table {
-  username: String!
+  firstName: String!
+  lastName: String!
   email: String!
+  universityID: String!
   createdAt: Timestamp!
-  role: String!
-  displayName: String
-  institution: Institution
+  profilePictureURL: String
+  major: String
+  yearOfStudy: Int
 }
 
-type Institution @table {
-  name: String!
-  type: String!
+type Course @table {
+  courseCode: String!
+  courseName: String!
+  semester: String!
+  year: Int!
   createdAt: Timestamp!
   description: String
-  website: String
+  instructorName: String
 }
 
-type Dataset @table {
-  title: String!
-  description: String!
-  publicationDate: Date!
-  isPublic: Boolean!
+type Enrollment @table(key: ["user", "course"]) {
+  user: User!
+  course: Course!
   createdAt: Timestamp!
-  institution: Institution
-  publisher: User
-  lastUpdated: Timestamp
-  tags: [String]
-  category: String
+  grade: Float
 }
 
-type File @table {
-  fileName: String!
-  fileType: String!
-  fileSize: Int64!
-  fileUrl: String!
-  version: String!
+type Assignment @table {
+  course: Course!
+  assignmentName: String!
+  dueDate: Timestamp!
   createdAt: Timestamp!
-  dataset: Dataset
   description: String
+  maxPoints: Int
+  earnedPoints: Float
 }
 
-type Comment @table {
-  content: String!
+type StudyGroup @table {
+  course: Course!
+  groupName: String!
   createdAt: Timestamp!
-  user: User
-  dataset: Dataset
-  parentComment: Comment
+  description: String
+  meetingLocation: String
+  meetingTime: Timestamp
 }
 
-type SubscriptionType @table {
+type Event @table {
+  creator: User!
+  eventName: String!
+  eventDate: Timestamp!
   createdAt: Timestamp!
-  user: User
-  dataset: Dataset
-  notificationPreference: String
+  description: String
+  location: String
+  isPublic: Boolean
 }

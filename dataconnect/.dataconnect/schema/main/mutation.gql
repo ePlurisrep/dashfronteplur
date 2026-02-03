@@ -1,49 +1,49 @@
 extend type Mutation {
   """
-  ✨ Insert a single `Comment` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
+  ✨ Insert a single `Assignment` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
-  comment_insert(
+  assignment_insert(
     """
     Data object to insert into the table.
     """
-    data: Comment_Data!
-  ): Comment_KeyOutput! @fdc_generated(from: "Comment", purpose: INSERT_SINGLE)
+    data: Assignment_Data!
+  ): Assignment_KeyOutput! @fdc_generated(from: "Assignment", purpose: INSERT_SINGLE)
   """
-  ✨ Insert a single `Dataset` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
+  ✨ Insert a single `Course` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
-  dataset_insert(
+  course_insert(
     """
     Data object to insert into the table.
     """
-    data: Dataset_Data!
-  ): Dataset_KeyOutput! @fdc_generated(from: "Dataset", purpose: INSERT_SINGLE)
+    data: Course_Data!
+  ): Course_KeyOutput! @fdc_generated(from: "Course", purpose: INSERT_SINGLE)
   """
-  ✨ Insert a single `File` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
+  ✨ Insert a single `Enrollment` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
-  file_insert(
+  enrollment_insert(
     """
     Data object to insert into the table.
     """
-    data: File_Data!
-  ): File_KeyOutput! @fdc_generated(from: "File", purpose: INSERT_SINGLE)
+    data: Enrollment_Data!
+  ): Enrollment_KeyOutput! @fdc_generated(from: "Enrollment", purpose: INSERT_SINGLE)
   """
-  ✨ Insert a single `Institution` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
+  ✨ Insert a single `Event` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
-  institution_insert(
+  event_insert(
     """
     Data object to insert into the table.
     """
-    data: Institution_Data!
-  ): Institution_KeyOutput! @fdc_generated(from: "Institution", purpose: INSERT_SINGLE)
+    data: Event_Data!
+  ): Event_KeyOutput! @fdc_generated(from: "Event", purpose: INSERT_SINGLE)
   """
-  ✨ Insert a single `SubscriptionType` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
+  ✨ Insert a single `StudyGroup` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
-  subscriptionType_insert(
+  studyGroup_insert(
     """
     Data object to insert into the table.
     """
-    data: SubscriptionType_Data!
-  ): SubscriptionType_KeyOutput! @fdc_generated(from: "SubscriptionType", purpose: INSERT_SINGLE)
+    data: StudyGroup_Data!
+  ): StudyGroup_KeyOutput! @fdc_generated(from: "StudyGroup", purpose: INSERT_SINGLE)
   """
   ✨ Insert a single `User` into the table and return its key. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
@@ -54,50 +54,50 @@ extend type Mutation {
     data: User_Data!
   ): User_KeyOutput! @fdc_generated(from: "User", purpose: INSERT_SINGLE)
   """
-  ✨ Insert `Comment` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
+  ✨ Insert `Assignment` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
-  comment_insertMany(
+  assignment_insertMany(
     """
     List of data objects to insert into the table.
     """
-    data: [Comment_Data!]!
-  ): [Comment_KeyOutput!]! @fdc_generated(from: "Comment", purpose: INSERT_MULTIPLE)
+    data: [Assignment_Data!]!
+  ): [Assignment_KeyOutput!]! @fdc_generated(from: "Assignment", purpose: INSERT_MULTIPLE)
   """
-  ✨ Insert `Dataset` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
+  ✨ Insert `Course` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
-  dataset_insertMany(
+  course_insertMany(
     """
     List of data objects to insert into the table.
     """
-    data: [Dataset_Data!]!
-  ): [Dataset_KeyOutput!]! @fdc_generated(from: "Dataset", purpose: INSERT_MULTIPLE)
+    data: [Course_Data!]!
+  ): [Course_KeyOutput!]! @fdc_generated(from: "Course", purpose: INSERT_MULTIPLE)
   """
-  ✨ Insert `File` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
+  ✨ Insert `Enrollment` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
-  file_insertMany(
+  enrollment_insertMany(
     """
     List of data objects to insert into the table.
     """
-    data: [File_Data!]!
-  ): [File_KeyOutput!]! @fdc_generated(from: "File", purpose: INSERT_MULTIPLE)
+    data: [Enrollment_Data!]!
+  ): [Enrollment_KeyOutput!]! @fdc_generated(from: "Enrollment", purpose: INSERT_MULTIPLE)
   """
-  ✨ Insert `Institution` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
+  ✨ Insert `Event` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
-  institution_insertMany(
+  event_insertMany(
     """
     List of data objects to insert into the table.
     """
-    data: [Institution_Data!]!
-  ): [Institution_KeyOutput!]! @fdc_generated(from: "Institution", purpose: INSERT_MULTIPLE)
+    data: [Event_Data!]!
+  ): [Event_KeyOutput!]! @fdc_generated(from: "Event", purpose: INSERT_MULTIPLE)
   """
-  ✨ Insert `SubscriptionType` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
+  ✨ Insert `StudyGroup` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
-  subscriptionType_insertMany(
+  studyGroup_insertMany(
     """
     List of data objects to insert into the table.
     """
-    data: [SubscriptionType_Data!]!
-  ): [SubscriptionType_KeyOutput!]! @fdc_generated(from: "SubscriptionType", purpose: INSERT_MULTIPLE)
+    data: [StudyGroup_Data!]!
+  ): [StudyGroup_KeyOutput!]! @fdc_generated(from: "StudyGroup", purpose: INSERT_MULTIPLE)
   """
   ✨ Insert `User` objects into the table and return their keys. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
@@ -108,50 +108,50 @@ extend type Mutation {
     data: [User_Data!]!
   ): [User_KeyOutput!]! @fdc_generated(from: "User", purpose: INSERT_MULTIPLE)
   """
-  ✨ Insert or update a single `Comment` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `Comment`.
+  ✨ Insert or update a single `Assignment` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `Assignment`.
   """
-  comment_upsert(
+  assignment_upsert(
     """
     Data object to insert or update if it already exists.
     """
-    data: Comment_Data!
-  ): Comment_KeyOutput! @fdc_generated(from: "Comment", purpose: UPSERT_SINGLE)
+    data: Assignment_Data!
+  ): Assignment_KeyOutput! @fdc_generated(from: "Assignment", purpose: UPSERT_SINGLE)
   """
-  ✨ Insert or update a single `Dataset` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `Dataset`.
+  ✨ Insert or update a single `Course` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `Course`.
   """
-  dataset_upsert(
+  course_upsert(
     """
     Data object to insert or update if it already exists.
     """
-    data: Dataset_Data!
-  ): Dataset_KeyOutput! @fdc_generated(from: "Dataset", purpose: UPSERT_SINGLE)
+    data: Course_Data!
+  ): Course_KeyOutput! @fdc_generated(from: "Course", purpose: UPSERT_SINGLE)
   """
-  ✨ Insert or update a single `File` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `File`.
+  ✨ Insert or update a single `Enrollment` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `Enrollment`.
   """
-  file_upsert(
+  enrollment_upsert(
     """
     Data object to insert or update if it already exists.
     """
-    data: File_Data!
-  ): File_KeyOutput! @fdc_generated(from: "File", purpose: UPSERT_SINGLE)
+    data: Enrollment_Data!
+  ): Enrollment_KeyOutput! @fdc_generated(from: "Enrollment", purpose: UPSERT_SINGLE)
   """
-  ✨ Insert or update a single `Institution` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `Institution`.
+  ✨ Insert or update a single `Event` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `Event`.
   """
-  institution_upsert(
+  event_upsert(
     """
     Data object to insert or update if it already exists.
     """
-    data: Institution_Data!
-  ): Institution_KeyOutput! @fdc_generated(from: "Institution", purpose: UPSERT_SINGLE)
+    data: Event_Data!
+  ): Event_KeyOutput! @fdc_generated(from: "Event", purpose: UPSERT_SINGLE)
   """
-  ✨ Insert or update a single `SubscriptionType` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `SubscriptionType`.
+  ✨ Insert or update a single `StudyGroup` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `StudyGroup`.
   """
-  subscriptionType_upsert(
+  studyGroup_upsert(
     """
     Data object to insert or update if it already exists.
     """
-    data: SubscriptionType_Data!
-  ): SubscriptionType_KeyOutput! @fdc_generated(from: "SubscriptionType", purpose: UPSERT_SINGLE)
+    data: StudyGroup_Data!
+  ): StudyGroup_KeyOutput! @fdc_generated(from: "StudyGroup", purpose: UPSERT_SINGLE)
   """
   ✨ Insert or update a single `User` into the table, based on the primary key. Returns the key of the newly inserted or existing updated `User`.
   """
@@ -162,50 +162,50 @@ extend type Mutation {
     data: User_Data!
   ): User_KeyOutput! @fdc_generated(from: "User", purpose: UPSERT_SINGLE)
   """
-  ✨ Insert or update `Comment` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `Comment`.
+  ✨ Insert or update `Assignment` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `Assignment`.
   """
-  comment_upsertMany(
+  assignment_upsertMany(
     """
     List of data objects to insert or update if it already exists.
     """
-    data: [Comment_Data!]!
-  ): [Comment_KeyOutput!]! @fdc_generated(from: "Comment", purpose: UPSERT_MULTIPLE)
+    data: [Assignment_Data!]!
+  ): [Assignment_KeyOutput!]! @fdc_generated(from: "Assignment", purpose: UPSERT_MULTIPLE)
   """
-  ✨ Insert or update `Dataset` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `Dataset`.
+  ✨ Insert or update `Course` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `Course`.
   """
-  dataset_upsertMany(
+  course_upsertMany(
     """
     List of data objects to insert or update if it already exists.
     """
-    data: [Dataset_Data!]!
-  ): [Dataset_KeyOutput!]! @fdc_generated(from: "Dataset", purpose: UPSERT_MULTIPLE)
+    data: [Course_Data!]!
+  ): [Course_KeyOutput!]! @fdc_generated(from: "Course", purpose: UPSERT_MULTIPLE)
   """
-  ✨ Insert or update `File` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `File`.
+  ✨ Insert or update `Enrollment` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `Enrollment`.
   """
-  file_upsertMany(
+  enrollment_upsertMany(
     """
     List of data objects to insert or update if it already exists.
     """
-    data: [File_Data!]!
-  ): [File_KeyOutput!]! @fdc_generated(from: "File", purpose: UPSERT_MULTIPLE)
+    data: [Enrollment_Data!]!
+  ): [Enrollment_KeyOutput!]! @fdc_generated(from: "Enrollment", purpose: UPSERT_MULTIPLE)
   """
-  ✨ Insert or update `Institution` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `Institution`.
+  ✨ Insert or update `Event` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `Event`.
   """
-  institution_upsertMany(
+  event_upsertMany(
     """
     List of data objects to insert or update if it already exists.
     """
-    data: [Institution_Data!]!
-  ): [Institution_KeyOutput!]! @fdc_generated(from: "Institution", purpose: UPSERT_MULTIPLE)
+    data: [Event_Data!]!
+  ): [Event_KeyOutput!]! @fdc_generated(from: "Event", purpose: UPSERT_MULTIPLE)
   """
-  ✨ Insert or update `SubscriptionType` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `SubscriptionType`.
+  ✨ Insert or update `StudyGroup` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `StudyGroup`.
   """
-  subscriptionType_upsertMany(
+  studyGroup_upsertMany(
     """
     List of data objects to insert or update if it already exists.
     """
-    data: [SubscriptionType_Data!]!
-  ): [SubscriptionType_KeyOutput!]! @fdc_generated(from: "SubscriptionType", purpose: UPSERT_MULTIPLE)
+    data: [StudyGroup_Data!]!
+  ): [StudyGroup_KeyOutput!]! @fdc_generated(from: "StudyGroup", purpose: UPSERT_MULTIPLE)
   """
   ✨ Insert or update `User` objects into the table, based on the primary key. Returns the key of the newly inserted or existing updated `User`.
   """
@@ -216,9 +216,9 @@ extend type Mutation {
     data: [User_Data!]!
   ): [User_KeyOutput!]! @fdc_generated(from: "User", purpose: UPSERT_MULTIPLE)
   """
-  ✨ Update a single `Comment` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `Comment` or `null` if not found.
+  ✨ Update a single `Assignment` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `Assignment` or `null` if not found.
   """
-  comment_update(
+  assignment_update(
     """
     The unique ID of the object.
     """
@@ -227,22 +227,22 @@ extend type Mutation {
     """
     The key used to identify the object.
     """
-    key: Comment_Key
+    key: Assignment_Key
 
     """
     Fetch the first row based on the filters and ordering.
     """
-    first: Comment_FirstRow
+    first: Assignment_FirstRow
 
     """
     Data object containing fields to be updated.
     """
-    data: Comment_Data!
-  ): Comment_KeyOutput @fdc_generated(from: "Comment", purpose: UPDATE_SINGLE)
+    data: Assignment_Data!
+  ): Assignment_KeyOutput @fdc_generated(from: "Assignment", purpose: UPDATE_SINGLE)
   """
-  ✨ Update a single `Dataset` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `Dataset` or `null` if not found.
+  ✨ Update a single `Course` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `Course` or `null` if not found.
   """
-  dataset_update(
+  course_update(
     """
     The unique ID of the object.
     """
@@ -251,22 +251,41 @@ extend type Mutation {
     """
     The key used to identify the object.
     """
-    key: Dataset_Key
+    key: Course_Key
 
     """
     Fetch the first row based on the filters and ordering.
     """
-    first: Dataset_FirstRow
+    first: Course_FirstRow
 
     """
     Data object containing fields to be updated.
     """
-    data: Dataset_Data!
-  ): Dataset_KeyOutput @fdc_generated(from: "Dataset", purpose: UPDATE_SINGLE)
+    data: Course_Data!
+  ): Course_KeyOutput @fdc_generated(from: "Course", purpose: UPDATE_SINGLE)
   """
-  ✨ Update a single `File` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `File` or `null` if not found.
+  ✨ Update a single `Enrollment` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `Enrollment` or `null` if not found.
   """
-  file_update(
+  enrollment_update(
+    """
+    The key used to identify the object.
+    """
+    key: Enrollment_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Enrollment_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: Enrollment_Data!
+  ): Enrollment_KeyOutput @fdc_generated(from: "Enrollment", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `Event` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `Event` or `null` if not found.
+  """
+  event_update(
     """
     The unique ID of the object.
     """
@@ -275,22 +294,22 @@ extend type Mutation {
     """
     The key used to identify the object.
     """
-    key: File_Key
+    key: Event_Key
 
     """
     Fetch the first row based on the filters and ordering.
     """
-    first: File_FirstRow
+    first: Event_FirstRow
 
     """
     Data object containing fields to be updated.
     """
-    data: File_Data!
-  ): File_KeyOutput @fdc_generated(from: "File", purpose: UPDATE_SINGLE)
+    data: Event_Data!
+  ): Event_KeyOutput @fdc_generated(from: "Event", purpose: UPDATE_SINGLE)
   """
-  ✨ Update a single `Institution` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `Institution` or `null` if not found.
+  ✨ Update a single `StudyGroup` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `StudyGroup` or `null` if not found.
   """
-  institution_update(
+  studyGroup_update(
     """
     The unique ID of the object.
     """
@@ -299,42 +318,18 @@ extend type Mutation {
     """
     The key used to identify the object.
     """
-    key: Institution_Key
+    key: StudyGroup_Key
 
     """
     Fetch the first row based on the filters and ordering.
     """
-    first: Institution_FirstRow
+    first: StudyGroup_FirstRow
 
     """
     Data object containing fields to be updated.
     """
-    data: Institution_Data!
-  ): Institution_KeyOutput @fdc_generated(from: "Institution", purpose: UPDATE_SINGLE)
-  """
-  ✨ Update a single `SubscriptionType` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `SubscriptionType` or `null` if not found.
-  """
-  subscriptionType_update(
-    """
-    The unique ID of the object.
-    """
-    id: UUID
-
-    """
-    The key used to identify the object.
-    """
-    key: SubscriptionType_Key
-
-    """
-    Fetch the first row based on the filters and ordering.
-    """
-    first: SubscriptionType_FirstRow
-
-    """
-    Data object containing fields to be updated.
-    """
-    data: SubscriptionType_Data!
-  ): SubscriptionType_KeyOutput @fdc_generated(from: "SubscriptionType", purpose: UPDATE_SINGLE)
+    data: StudyGroup_Data!
+  ): StudyGroup_KeyOutput @fdc_generated(from: "StudyGroup", purpose: UPDATE_SINGLE)
   """
   ✨ Update a single `User` based on `id`, `key` or `first`, setting columns specified in `data`. Returns the key of the updated `User` or `null` if not found.
   """
@@ -360,13 +355,13 @@ extend type Mutation {
     data: User_Data!
   ): User_KeyOutput @fdc_generated(from: "User", purpose: UPDATE_SINGLE)
   """
-  ✨ Update `Comment` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  ✨ Update `Assignment` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
   """
-  comment_updateMany(
+  assignment_updateMany(
     """
     Filter condition to specify which rows to update.
     """
-    where: Comment_Filter
+    where: Assignment_Filter
 
     """
     Set to true to update all rows.
@@ -376,16 +371,16 @@ extend type Mutation {
     """
     Data object containing fields to update.
     """
-    data: Comment_Data!
-  ): Int! @fdc_generated(from: "Comment", purpose: UPDATE_MULTIPLE)
+    data: Assignment_Data!
+  ): Int! @fdc_generated(from: "Assignment", purpose: UPDATE_MULTIPLE)
   """
-  ✨ Update `Dataset` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  ✨ Update `Course` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
   """
-  dataset_updateMany(
+  course_updateMany(
     """
     Filter condition to specify which rows to update.
     """
-    where: Dataset_Filter
+    where: Course_Filter
 
     """
     Set to true to update all rows.
@@ -395,16 +390,16 @@ extend type Mutation {
     """
     Data object containing fields to update.
     """
-    data: Dataset_Data!
-  ): Int! @fdc_generated(from: "Dataset", purpose: UPDATE_MULTIPLE)
+    data: Course_Data!
+  ): Int! @fdc_generated(from: "Course", purpose: UPDATE_MULTIPLE)
   """
-  ✨ Update `File` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  ✨ Update `Enrollment` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
   """
-  file_updateMany(
+  enrollment_updateMany(
     """
     Filter condition to specify which rows to update.
     """
-    where: File_Filter
+    where: Enrollment_Filter
 
     """
     Set to true to update all rows.
@@ -414,16 +409,16 @@ extend type Mutation {
     """
     Data object containing fields to update.
     """
-    data: File_Data!
-  ): Int! @fdc_generated(from: "File", purpose: UPDATE_MULTIPLE)
+    data: Enrollment_Data!
+  ): Int! @fdc_generated(from: "Enrollment", purpose: UPDATE_MULTIPLE)
   """
-  ✨ Update `Institution` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  ✨ Update `Event` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
   """
-  institution_updateMany(
+  event_updateMany(
     """
     Filter condition to specify which rows to update.
     """
-    where: Institution_Filter
+    where: Event_Filter
 
     """
     Set to true to update all rows.
@@ -433,16 +428,16 @@ extend type Mutation {
     """
     Data object containing fields to update.
     """
-    data: Institution_Data!
-  ): Int! @fdc_generated(from: "Institution", purpose: UPDATE_MULTIPLE)
+    data: Event_Data!
+  ): Int! @fdc_generated(from: "Event", purpose: UPDATE_MULTIPLE)
   """
-  ✨ Update `SubscriptionType` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  ✨ Update `StudyGroup` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
   """
-  subscriptionType_updateMany(
+  studyGroup_updateMany(
     """
     Filter condition to specify which rows to update.
     """
-    where: SubscriptionType_Filter
+    where: StudyGroup_Filter
 
     """
     Set to true to update all rows.
@@ -452,8 +447,8 @@ extend type Mutation {
     """
     Data object containing fields to update.
     """
-    data: SubscriptionType_Data!
-  ): Int! @fdc_generated(from: "SubscriptionType", purpose: UPDATE_MULTIPLE)
+    data: StudyGroup_Data!
+  ): Int! @fdc_generated(from: "StudyGroup", purpose: UPDATE_MULTIPLE)
   """
   ✨ Update `User` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
   """
@@ -474,9 +469,9 @@ extend type Mutation {
     data: User_Data!
   ): Int! @fdc_generated(from: "User", purpose: UPDATE_MULTIPLE)
   """
-  ✨ Delete a single `Comment` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  ✨ Delete a single `Assignment` based on `id`, `key` or `first` and return its key (or `null` if not found).
   """
-  comment_delete(
+  assignment_delete(
     """
     The unique ID of the object.
     """
@@ -485,17 +480,17 @@ extend type Mutation {
     """
     The key used to identify the object.
     """
-    key: Comment_Key
+    key: Assignment_Key
 
     """
     Fetch the first row based on the filters and ordering.
     """
-    first: Comment_FirstRow
-  ): Comment_KeyOutput @fdc_generated(from: "Comment", purpose: DELETE_SINGLE)
+    first: Assignment_FirstRow
+  ): Assignment_KeyOutput @fdc_generated(from: "Assignment", purpose: DELETE_SINGLE)
   """
-  ✨ Delete a single `Dataset` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  ✨ Delete a single `Course` based on `id`, `key` or `first` and return its key (or `null` if not found).
   """
-  dataset_delete(
+  course_delete(
     """
     The unique ID of the object.
     """
@@ -504,17 +499,31 @@ extend type Mutation {
     """
     The key used to identify the object.
     """
-    key: Dataset_Key
+    key: Course_Key
 
     """
     Fetch the first row based on the filters and ordering.
     """
-    first: Dataset_FirstRow
-  ): Dataset_KeyOutput @fdc_generated(from: "Dataset", purpose: DELETE_SINGLE)
+    first: Course_FirstRow
+  ): Course_KeyOutput @fdc_generated(from: "Course", purpose: DELETE_SINGLE)
   """
-  ✨ Delete a single `File` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  ✨ Delete a single `Enrollment` based on `id`, `key` or `first` and return its key (or `null` if not found).
   """
-  file_delete(
+  enrollment_delete(
+    """
+    The key used to identify the object.
+    """
+    key: Enrollment_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Enrollment_FirstRow
+  ): Enrollment_KeyOutput @fdc_generated(from: "Enrollment", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `Event` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  event_delete(
     """
     The unique ID of the object.
     """
@@ -523,17 +532,17 @@ extend type Mutation {
     """
     The key used to identify the object.
     """
-    key: File_Key
+    key: Event_Key
 
     """
     Fetch the first row based on the filters and ordering.
     """
-    first: File_FirstRow
-  ): File_KeyOutput @fdc_generated(from: "File", purpose: DELETE_SINGLE)
+    first: Event_FirstRow
+  ): Event_KeyOutput @fdc_generated(from: "Event", purpose: DELETE_SINGLE)
   """
-  ✨ Delete a single `Institution` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  ✨ Delete a single `StudyGroup` based on `id`, `key` or `first` and return its key (or `null` if not found).
   """
-  institution_delete(
+  studyGroup_delete(
     """
     The unique ID of the object.
     """
@@ -542,32 +551,13 @@ extend type Mutation {
     """
     The key used to identify the object.
     """
-    key: Institution_Key
+    key: StudyGroup_Key
 
     """
     Fetch the first row based on the filters and ordering.
     """
-    first: Institution_FirstRow
-  ): Institution_KeyOutput @fdc_generated(from: "Institution", purpose: DELETE_SINGLE)
-  """
-  ✨ Delete a single `SubscriptionType` based on `id`, `key` or `first` and return its key (or `null` if not found).
-  """
-  subscriptionType_delete(
-    """
-    The unique ID of the object.
-    """
-    id: UUID
-
-    """
-    The key used to identify the object.
-    """
-    key: SubscriptionType_Key
-
-    """
-    Fetch the first row based on the filters and ordering.
-    """
-    first: SubscriptionType_FirstRow
-  ): SubscriptionType_KeyOutput @fdc_generated(from: "SubscriptionType", purpose: DELETE_SINGLE)
+    first: StudyGroup_FirstRow
+  ): StudyGroup_KeyOutput @fdc_generated(from: "StudyGroup", purpose: DELETE_SINGLE)
   """
   ✨ Delete a single `User` based on `id`, `key` or `first` and return its key (or `null` if not found).
   """
@@ -588,75 +578,75 @@ extend type Mutation {
     first: User_FirstRow
   ): User_KeyOutput @fdc_generated(from: "User", purpose: DELETE_SINGLE)
   """
-  ✨ Delete `Comment` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  ✨ Delete `Assignment` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
   """
-  comment_deleteMany(
+  assignment_deleteMany(
     """
     Filter condition to specify which rows to delete.
     """
-    where: Comment_Filter
+    where: Assignment_Filter
 
     """
     Set to true to delete all rows.
     """
     all: Boolean = false
-  ): Int! @fdc_generated(from: "Comment", purpose: DELETE_MULTIPLE)
+  ): Int! @fdc_generated(from: "Assignment", purpose: DELETE_MULTIPLE)
   """
-  ✨ Delete `Dataset` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  ✨ Delete `Course` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
   """
-  dataset_deleteMany(
+  course_deleteMany(
     """
     Filter condition to specify which rows to delete.
     """
-    where: Dataset_Filter
+    where: Course_Filter
 
     """
     Set to true to delete all rows.
     """
     all: Boolean = false
-  ): Int! @fdc_generated(from: "Dataset", purpose: DELETE_MULTIPLE)
+  ): Int! @fdc_generated(from: "Course", purpose: DELETE_MULTIPLE)
   """
-  ✨ Delete `File` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  ✨ Delete `Enrollment` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
   """
-  file_deleteMany(
+  enrollment_deleteMany(
     """
     Filter condition to specify which rows to delete.
     """
-    where: File_Filter
+    where: Enrollment_Filter
 
     """
     Set to true to delete all rows.
     """
     all: Boolean = false
-  ): Int! @fdc_generated(from: "File", purpose: DELETE_MULTIPLE)
+  ): Int! @fdc_generated(from: "Enrollment", purpose: DELETE_MULTIPLE)
   """
-  ✨ Delete `Institution` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  ✨ Delete `Event` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
   """
-  institution_deleteMany(
+  event_deleteMany(
     """
     Filter condition to specify which rows to delete.
     """
-    where: Institution_Filter
+    where: Event_Filter
 
     """
     Set to true to delete all rows.
     """
     all: Boolean = false
-  ): Int! @fdc_generated(from: "Institution", purpose: DELETE_MULTIPLE)
+  ): Int! @fdc_generated(from: "Event", purpose: DELETE_MULTIPLE)
   """
-  ✨ Delete `SubscriptionType` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  ✨ Delete `StudyGroup` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
   """
-  subscriptionType_deleteMany(
+  studyGroup_deleteMany(
     """
     Filter condition to specify which rows to delete.
     """
-    where: SubscriptionType_Filter
+    where: StudyGroup_Filter
 
     """
     Set to true to delete all rows.
     """
     all: Boolean = false
-  ): Int! @fdc_generated(from: "SubscriptionType", purpose: DELETE_MULTIPLE)
+  ): Int! @fdc_generated(from: "StudyGroup", purpose: DELETE_MULTIPLE)
   """
   ✨ Delete `User` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
   """
