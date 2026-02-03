@@ -11,3 +11,9 @@ Main schema: sources: schema/schema.gql [998B]
 I0203 18:39:56.375234     406 collector.go:107] schema extensions wrote into "/home/user/dashfronteplur/dataconnect/.dataconnect/schema"
 Generated sources: main/mutation.gql [20344B] main/implicit.gql [2535B] main/input.gql [63635B] prelude.gql [73281B] main/relation.gql [32613B] main/query.gql [7528B] 
 I0203 18:39:56.381864     406 load.go:109] Finished reloading
+I0203 20:14:55.803489     406 load.go:31] Reloading schema and connectors...
+E0203 20:14:55.815799     406 load.go:73] Could not load sources: 
+Errors: schema/schema.gql:9:6: Cannot redeclare type Query.
+I0203 20:14:55.818969     406 collector.go:107] schema extensions wrote into "/home/user/dashfronteplur/dataconnect/.dataconnect/schema"
+Generated sources: main/query.gql [7528B] main/mutation.gql [20344B] main/implicit.gql [2535B] main/input.gql [63635B] prelude.gql [73281B] main/relation.gql [32613B] 
+I0203 20:14:55.819962     406 load.go:74] Finished reloading

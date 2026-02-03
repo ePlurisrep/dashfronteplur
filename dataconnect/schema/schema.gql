@@ -1,56 +1,17 @@
-type User @table {
-  firstName: String!
-  lastName: String!
-  email: String!
-  universityID: String!
-  createdAt: Timestamp!
-  profilePictureURL: String
-  major: String
-  yearOfStudy: Int
+
+type IngestedData @table(name: "ingested_data") {
+  id: ID! @column(name: "id", primaryKey: true, default: "gen_random_uuid()")
+  source: String! @column(name: "source")
+  data: String! @column(name: "data")
+  createdAt: Timestamp! @column(name: "created_at", default: "now()")
 }
 
-type Course @table {
-  courseCode: String!
-  courseName: String!
-  semester: String!
-  year: Int!
-  createdAt: Timestamp!
-  description: String
-  instructorName: String
+type Query {
+  listIngestedData: [IngestedData!]! @query(kind: "SELECT")
 }
 
-type Enrollment @table(key: ["user", "course"]) {
-  user: User!
-  course: Course!
-  createdAt: Timestamp!
-  grade: Float
-}
-
-type Assignment @table {
-  course: Course!
-  assignmentName: String!
-  dueDate: Timestamp!
-  createdAt: Timestamp!
-  description: String
-  maxPoints: Int
-  earnedPoints: Float
-}
-
-type StudyGroup @table {
-  course: Course!
-  groupName: String!
-  createdAt: Timestamp!
-  description: String
-  meetingLocation: String
-  meetingTime: Timestamp
-}
-
-type Event @table {
-  creator: User!
-  eventName: String!
-  eventDate: Timestamp!
-  createdAt: Timestamp!
-  description: String
-  location: String
-  isPublic: Boolean
+type Mutation {
+  createIngestedData(
+    data: IngestedDataInput!
+  ): IngestedData! @mutation(kind: "INSERT")
 }

@@ -281,3 +281,13 @@ Generated sources: main/mutation.gql [20344B] main/implicit.gql [2535B] main/inp
  {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0203 18:39:56.375234     406 collector.go:107] schema extensions wrote into \"/home/user/dashfronteplur/dataconnect/.dataconnect/schema\"\nGenerated sources: main/mutation.gql [20344B] main/implicit.gql [2535B] main/input.gql [63635B] prelude.gql [73281B] main/relation.gql [32613B] main/query.gql [7528B] \n"}}
 [debug] [2026-02-03T18:39:56.382Z] I0203 18:39:56.381864     406 load.go:109] Finished reloading
  {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0203 18:39:56.381864     406 load.go:109] Finished reloading\n"}}
+[debug] [2026-02-03T20:14:55.804Z] I0203 20:14:55.803489     406 load.go:31] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0203 20:14:55.803489     406 load.go:31] Reloading schema and connectors...\n"}}
+[debug] [2026-02-03T20:14:55.816Z] E0203 20:14:55.815799     406 load.go:73] Could not load sources: 
+Errors: schema/schema.gql:9:6: Cannot redeclare type Query.
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0203 20:14:55.815799     406 load.go:73] Could not load sources: \nErrors: schema/schema.gql:9:6: Cannot redeclare type Query.\n"}}
+[debug] [2026-02-03T20:14:55.819Z] I0203 20:14:55.818969     406 collector.go:107] schema extensions wrote into "/home/user/dashfronteplur/dataconnect/.dataconnect/schema"
+Generated sources: main/query.gql [7528B] main/mutation.gql [20344B] main/implicit.gql [2535B] main/input.gql [63635B] prelude.gql [73281B] main/relation.gql [32613B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0203 20:14:55.818969     406 collector.go:107] schema extensions wrote into \"/home/user/dashfronteplur/dataconnect/.dataconnect/schema\"\nGenerated sources: main/query.gql [7528B] main/mutation.gql [20344B] main/implicit.gql [2535B] main/input.gql [63635B] prelude.gql [73281B] main/relation.gql [32613B] \n"}}
+[debug] [2026-02-03T20:14:55.820Z] I0203 20:14:55.819962     406 load.go:74] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0203 20:14:55.819962     406 load.go:74] Finished reloading\n"}}
