@@ -1,19 +1,15 @@
-I0203 18:35:15.306282     406 load.go:31] Reloading schema and connectors...
-I0203 18:35:15.519258     406 control.go:100] [/emulator/dashfronteplur fc0d] UpdateResources(): done
-Main schema: sources: schema/schema.gql [944B] 
-I0203 18:35:15.792355     406 collector.go:107] schema extensions wrote into "/home/user/dashfronteplur/dataconnect/.dataconnect/schema"
-Generated sources: main/implicit.gql [3802B] main/input.gql [59642B] main/relation.gql [30229B] main/query.gql [7643B] main/mutation.gql [20650B] prelude.gql [73281B] 
-I0203 18:35:15.793027     406 load.go:109] Finished reloading
-I0203 18:35:15.808166     406 dev.go:104] Listening on address (HTTP + gRPC): 127.0.0.1:50001
-I0203 18:39:55.803171     406 load.go:31] Reloading schema and connectors...
-I0203 18:39:56.104765     406 control.go:100] [/emulator/dashfronteplur 125e] UpdateResources(): done
-Main schema: sources: schema/schema.gql [998B] 
-I0203 18:39:56.375234     406 collector.go:107] schema extensions wrote into "/home/user/dashfronteplur/dataconnect/.dataconnect/schema"
-Generated sources: main/mutation.gql [20344B] main/implicit.gql [2535B] main/input.gql [63635B] prelude.gql [73281B] main/relation.gql [32613B] main/query.gql [7528B] 
-I0203 18:39:56.381864     406 load.go:109] Finished reloading
-I0203 20:14:55.803489     406 load.go:31] Reloading schema and connectors...
-E0203 20:14:55.815799     406 load.go:73] Could not load sources: 
+I0204 17:30:14.127812     401 load.go:31] Reloading schema and connectors...
+E0204 17:30:14.145273     401 load.go:63] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service "dashfronteplur". No service has a schema.
+E0204 17:30:14.145338     401 load.go:73] Could not load sources: 
 Errors: schema/schema.gql:9:6: Cannot redeclare type Query.
-I0203 20:14:55.818969     406 collector.go:107] schema extensions wrote into "/home/user/dashfronteplur/dataconnect/.dataconnect/schema"
-Generated sources: main/query.gql [7528B] main/mutation.gql [20344B] main/implicit.gql [2535B] main/input.gql [63635B] prelude.gql [73281B] main/relation.gql [32613B] 
-I0203 20:14:55.819962     406 load.go:74] Finished reloading
+I0204 17:30:14.146675     401 collector.go:107] schema extensions wrote into "/home/user/dashfronteplur/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [73281B] 
+I0204 17:30:14.149611     401 load.go:74] Finished reloading
+I0204 17:30:14.163538     401 dev.go:104] Listening on address (HTTP + gRPC): 127.0.0.1:50001
+I0204 17:52:04.160386     401 load.go:31] Reloading schema and connectors...
+E0204 17:52:04.165712     401 load.go:63] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service "dashfronteplur". No service has a schema.
+E0204 17:52:04.165783     401 load.go:73] Could not load sources: 
+Errors: schema/schema.gql:2:12: Undefined directive column.
+I0204 17:52:04.166313     401 collector.go:107] schema extensions wrote into "/home/user/dashfronteplur/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [73281B] 
+I0204 17:52:04.166350     401 load.go:74] Finished reloading

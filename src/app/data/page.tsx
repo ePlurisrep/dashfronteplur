@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { FileText, FileUp, Link as LinkIcon } from 'lucide-react';
+import { httpClient } from '@/lib/httpClient';
 
 interface IngestedData {
   id: string;
@@ -11,7 +12,7 @@ interface IngestedData {
   createdAt: {
     seconds: number;
     nanoseconds: number;
-  }; 
+  };
 }
 
 export default function DataPage() {
@@ -21,11 +22,7 @@ export default function DataPage() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch('/api/data');
-        if (!response.ok) {
-          throw new Error('Failed to fetch data');
-        }
-        const result = await response.json();
+        const result = await httpClient.get<{ data: IngestedData[] }>('/api/data');
         setData(result.data);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -58,7 +55,7 @@ export default function DataPage() {
   }
 
   return (
-    <main 
+    <main
       className="min-h-[calc(100vh-64px)] bg-gray-50 dark:bg-gray-900 p-4 sm:p-6 md:p-8"
       style={{
         backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px)',
@@ -75,7 +72,7 @@ export default function DataPage() {
             <FileUp className="h-16 w-16 text-gray-400 dark:text-gray-500" />
             <h2 className="mt-6 text-xl font-semibold text-gray-700 dark:text-gray-200">No Data Yet</h2>
             <p className="mt-2 text-gray-500 dark:text-gray-400">
-              You haven't ingested any data. Go to the upload page to get started.
+              You haven&apos;t ingested any data. Go to the upload page to get started.
             </p>
             <Link
               href="/upload"
@@ -87,8 +84,8 @@ export default function DataPage() {
         ) : (
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {data.map((item) => (
-              <div 
-                key={item.id} 
+              <div
+                key={item.id}
                 className="transform-gpu rounded-2xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]"
               >
                 <div className="p-5">

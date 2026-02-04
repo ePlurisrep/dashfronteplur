@@ -1,4 +1,3 @@
-
 type IngestedData @table(name: "ingested_data") {
   id: ID! @column(name: "id", primaryKey: true, default: "gen_random_uuid()")
   source: String! @column(name: "source")
@@ -6,12 +5,17 @@ type IngestedData @table(name: "ingested_data") {
   createdAt: Timestamp! @column(name: "created_at", default: "now()")
 }
 
-type Query {
-  listIngestedData: [IngestedData!]! @query(kind: "SELECT")
+extend type Query {
+ listIngestedData: [IngestedData!]! @query(kind: "SELECT")
 }
 
-type Mutation {
-  createIngestedData(
-    data: IngestedDataInput!
-  ): IngestedData! @mutation(kind: "INSERT")
+input IngestedDataInput {
+  source: String!
+  data: String!
+}
+
+extend type Mutation {
+ createIngestedData(
+   data: IngestedDataInput!
+ ): IngestedData! @mutation(kind: "INSERT")
 }

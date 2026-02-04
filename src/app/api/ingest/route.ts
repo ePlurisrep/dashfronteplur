@@ -1,15 +1,9 @@
 'use server';
 
-import { initializeApp, getApps } from 'firebase-admin/app';
-import { getFirestore } from 'firebase-admin/firestore';
 import { NextRequest, NextResponse } from 'next/server';
+import { db } from '@/lib/firebase/admin';
 
-// Initialize Firebase Admin SDK
-if (!getApps().length) {
-  initializeApp();
-}
-
-async function normalizeAndSaveData(source: string, data: any) {
+async function normalizeAndSaveData(source: string, data: string | Buffer) {
   console.log(`Normalizing and saving data from source: ${source}`);
 
   let processedData: string;
@@ -19,12 +13,11 @@ async function normalizeAndSaveData(source: string, data: any) {
     processedData = data.toString('base64'); 
     console.log(`Received PDF data with size: ${data.length}`);
   } else {
-    processedData = data;
+    processedData = data.toString();
     console.log(`Received text data: ${data}`);
   }
 
   try {
-    const db = getFirestore();
     const docRef = await db.collection('ingested_data').add({
       source,
       data: processedData,
@@ -46,7 +39,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Missing source or data' }, { status: 400 });
     }
 
-    let processedData: any = data;
+    let processedData: string | Buffer = data;
 
     if (source === 'pdf' && typeof data === 'string' && data.startsWith('http')) {
       try {

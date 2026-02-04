@@ -35,7 +35,7 @@ export default function UploadPage() {
 
     startTransition(async () => {
       let source = '';
-      let data: any = null;
+      let data: string | ArrayBuffer | null = null;
 
       if (uploadType === 'file' && file) {
         source = 'pdf';
